@@ -1,39 +1,54 @@
 #!/usr/bin/env python3
-"""Refresh sports-dashboard scores.json from team schedules and College Hockey News."""
+"""Update sports scores using team schedules, with NHL and CHN fallbacks."""
 import datetime as dt
 import html
 from html.parser import HTMLParser
 import json
 import pathlib
 import re
+import urllib.parse
 import urllib.request
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent
 TEAMS = json.loads((ROOT / 'teams.json').read_text(encoding='utf-8'))
-HEADERS = {'User-Agent': 'Mozilla/5.0 (compatible; SportsDashboard/1.1)', 'Accept': '*/*'}
-CENTRAL = ZoneInfo('America/Chicago')
 NOW = dt.datetime.now(dt.timezone.utc)
-CHN = {'north dakota': ('North-Dakota', 40), 'und': ('North-Dakota', 40),
-       'augustana': ('Augustana', 64)}
+CENTRAL = ZoneInfo('America/Chicago')
+HEADERS = {'User-Agent': 'Mozilla/5.0 (SportsDashboard/1.2)', 'Accept': 'application/json,text/html,*/*'}
+CHN = {'north dakota': ('North-Dakota', 40), 'und': ('North-Dakota', 40), 'augustana': ('Augustana', 64)}
 
 
 def fetch(url, json_mode=True):
     try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=20) as response:
-            raw = response.read()
-        return json.loads(raw) if json_mode else raw.decode('utf-8', 'replace')
+        with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=18) as r:
+            data = r.read()
+        return json.loads(data) if json_mode else data.decode('utf-8', 'replace')
     except Exception as exc:
-        print('Feed unavailable:', url, str(exc)[:160])
+        print('Feed unavailable:', url, str(exc)[:120])
         return None
 
 
-def info(t):
+def when_utc(value):
+    try:
+        return dt.datetime.fromisoformat(value.replace('Z', '+00:00')).astimezone(dt.timezone.utc)
+    except (AttributeError, ValueError, TypeError):
+        return None
+
+
+def stamp(value):
+    date = when_utc(value)
+    if not date:
+        return 'Time TBD'
+    local = date.astimezone(CENTRAL)
+    return f'{local:%b} {local.day}, {local:%I:%M %p} CT'.replace(', 0', ', ')
+
+
+def identity(t):
+    sport, league = t['sport'], t['league']
     ident = t.get('id')
     if ident and not t.get('search'):
-        return {'id': str(ident), 'logo': f"https://a.espncdn.com/i/teamlogos/{t['league']}/500/{ident}.png"}
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{t['sport']}/{t['league']}/teams?limit=500"
+        return {'id': str(ident), 'logo': f'https://a.espncdn.com/i/teamlogos/{league}/500/{ident}.png'}
+    url = f'https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}/teams?limit=500'
     data = fetch(url) or {}
     sports = data.get('sports') or [{}]
     leagues = sports[0].get('leagues') or [{}]
@@ -45,84 +60,127 @@ def info(t):
     if not found:
         return None
     logos = found.get('logos') or [{}]
-    return {'id': str(found['id']), 'logo': logos[0].get('href', '')}
+    return {'id': str(found['id']), 'logo': logos[0].get('href', ''), 'abbreviation': found.get('abbreviation', '')}
 
 
-def record(t, i):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{t['sport']}/{t['league']}/teams/{i['id']}"
-    team = (fetch(url) or {}).get('team') or {}
-    items = (team.get('record') or {}).get('items') or []
-    rec = next((x for x in items if 'overall' in str(x.get('type', x.get('name', ''))).lower()), items[0] if items else {})
-    if rec.get('summary'):
-        return rec['summary']
-    stats = {x.get('name'): x.get('value') for x in rec.get('stats', [])}
+def team_data(t, ident):
+    return (fetch(f"https://site.api.espn.com/apis/site/v2/sports/{t['sport']}/{t['league']}/teams/{ident['id']}") or {}).get('team') or {}
+
+
+def record(data):
+    items = (data.get('record') or {}).get('items') or []
+    item = next((x for x in items if 'overall' in str(x.get('type', x.get('name', ''))).lower()), items[0] if items else {})
+    if item.get('summary'):
+        return item['summary']
+    stats = {x.get('name'): x.get('value') for x in item.get('stats', [])}
     if stats.get('wins') is not None and stats.get('losses') is not None:
         return f"{int(stats['wins'])}-{int(stats['losses'])}"
     return None
 
 
-def parse_date(value):
-    try:
-        return dt.datetime.fromisoformat(value.replace('Z', '+00:00')).astimezone(dt.timezone.utc)
-    except (ValueError, AttributeError):
-        return None
-
-
-def find_events(data):
-    # ESPN returns events directly on scoreboard and under team.events on schedule.
+def events_in(data):
+    if isinstance(data, list):
+        return data
     if not isinstance(data, dict):
         return []
     return data.get('events') or (data.get('team') or {}).get('events') or []
 
 
-def event_for_team(events, t, i):
-    matched = []
-    for event in events:
-        comps = (event.get('competitions') or [{}])[0].get('competitors') or []
-        if any(str((c.get('team') or {}).get('id')) == str(i['id']) or
-               (c.get('team') or {}).get('displayName', '').lower() == t['name'].lower() for c in comps):
-            matched.append(event)
-    return matched
+def competitors(e):
+    competitions = e.get('competitions') or []
+    return (competitions[0].get('competitors') or []) if competitions else []
 
 
-def game(t, i):
-    base = f"https://site.api.espn.com/apis/site/v2/sports/{t['sport']}/{t['league']}"
-    # Team schedule endpoints are much more reliable than one league-wide 500-game response.
+def is_mine(c, t, ident):
+    team = c.get('team') or {}
+    return (str(team.get('id')) == str(ident['id']) or
+            team.get('displayName', '').casefold() == t['name'].casefold())
+
+
+def schedule_espn(t, ident):
+    sport, league, team_id = t['sport'], t['league'], ident['id']
+    base = f'https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}'
+    webbase = f'https://site.web.api.espn.com/apis/v2/sports/{sport}/{league}'
+    # ESPN's site/v2 /teams/{id}/schedule often returns 404. Try web/v2 first.
+    urls = [f'{webbase}/teams/{team_id}/schedule',
+            f'{webbase}/teams/{team_id}/schedule?season={NOW.year}',
+            f'{base}/teams/{team_id}/schedule',
+            f'{base}/schedule?team={team_id}']
+    # Small date windows are more reliable than huge scoreboard requests.
+    for offset in (0, 7, 14, 21, -7):
+        start = (NOW + dt.timedelta(days=offset)).strftime('%Y%m%d')
+        end = (NOW + dt.timedelta(days=offset + 6)).strftime('%Y%m%d')
+        urls.append(f'{base}/scoreboard?dates={start}-{end}&limit=100')
     events = []
-    for suffix in (f"/teams/{i['id']}/schedule?limit=300", f"/teams/{i['id']}/schedule?season={NOW.year}&limit=300"):
-        data = fetch(base + suffix)
-        events.extend(event_for_team(find_events(data), t, i))
-        if events:
+    for url in urls:
+        data = fetch(url)
+        matches = [e for e in events_in(data) if any(is_mine(c, t, ident) for c in competitors(e))]
+        events.extend(matches)
+        if matches and '/schedule' in url:
             break
-    if not events:
-        for start in (-7, 0, 7, 14, 21):
-            a = (NOW + dt.timedelta(days=start)).strftime('%Y%m%d')
-            b = (NOW + dt.timedelta(days=start + 6)).strftime('%Y%m%d')
-            data = fetch(f'{base}/scoreboard?dates={a}-{b}&limit=500')
-            events.extend(event_for_team(find_events(data), t, i))
-    unique = {str(e.get('id', idx)): e for idx, e in enumerate(events)}
-    events = list(unique.values())
+    return list({str(e.get('id', idx)): e for idx, e in enumerate(events)}.values())
+
+
+def choose(events):
     def state(e):
         return ((e.get('status') or {}).get('type') or {}).get('state')
     live = [e for e in events if state(e) == 'in']
-    future = sorted((e for e in events if state(e) == 'pre' and parse_date(e.get('date')) and parse_date(e['date']) >= NOW - dt.timedelta(hours=2)), key=lambda e: e.get('date', ''))
-    past = sorted((e for e in events if state(e) == 'post'), key=lambda e: e.get('date', ''), reverse=True)
-    ev = (live or future or past or [None])[0]
-    if not ev:
+    upcoming = sorted((e for e in events if state(e) == 'pre' and
+                       (when_utc(e.get('date')) or NOW) >= NOW - dt.timedelta(hours=2)),
+                      key=lambda e: e.get('date', ''))
+    recent = sorted((e for e in events if state(e) == 'post'), key=lambda e: e.get('date', ''), reverse=True)
+    return (live or upcoming or recent or [None])[0]
+
+
+def game_espn(t, ident):
+    e = choose(schedule_espn(t, ident))
+    if not e:
         return {'match': 'Schedule unavailable', 'detail': 'No schedule returned', 'score': ''}
-    comps = (ev.get('competitions') or [{}])[0].get('competitors') or []
-    mine = next((c for c in comps if str((c.get('team') or {}).get('id')) == str(i['id']) or (c.get('team') or {}).get('displayName', '').lower() == t['name'].lower()), None)
-    opp = next((c for c in comps if c is not mine), None)
-    opponent = ((opp or {}).get('team') or {}).get('displayName', 'TBD')
-    when = parse_date(ev.get('date'))
-    stamp = when.astimezone(CENTRAL).strftime('%b %-d, %-I:%M %p CT') if when else 'Time TBD'
-    status = state(ev)
+    cs = competitors(e)
+    mine = next((c for c in cs if is_mine(c, t, ident)), None)
+    other = next((c for c in cs if c is not mine), None)
+    state = ((e.get('status') or {}).get('type') or {}).get('state')
+    opponent = ((other or {}).get('team') or {}).get('displayName') or 'TBD'
     away = (mine or {}).get('homeAway') == 'away'
-    result = {'match': ('at ' if away else 'vs ') + opponent,
-              'detail': ('LIVE' if status == 'in' else 'FINAL' if status == 'post' else 'NEXT') + ' · ' + stamp,
-              'score': '', 'live': status == 'in'}
-    if status in ('in', 'post') and mine and opp:
-        result['score'] = f"{mine.get('score', '–')} – {opp.get('score', '–')}"
+    out = {'match': ('at ' if away else 'vs ') + opponent,
+           'detail': ('LIVE' if state == 'in' else 'FINAL' if state == 'post' else 'NEXT') + ' · ' + stamp(e.get('date')),
+           'score': '', 'live': state == 'in'}
+    if state in ('in', 'post') and mine and other:
+        def score(c):
+            value = c.get('score', '–')
+            return str(value.get('displayValue', value.get('value', '–'))) if isinstance(value, dict) else str(value)
+        out['score'] = score(mine) + ' – ' + score(other)
+    return out
+
+
+def game_nhl(t, ident, data):
+    abbr = (data.get('abbreviation') or ident.get('abbreviation') or '').upper()
+    if not abbr:
+        return None
+    season = f'{NOW.year if NOW.month >= 7 else NOW.year-1}{NOW.year+1 if NOW.month >= 7 else NOW.year}'
+    games = (fetch(f'https://api-web.nhle.com/v1/club-schedule-season/{abbr}/{season}') or {}).get('games') or []
+    def nhl_date(g):
+        return when_utc(g.get('startTimeUTC'))
+    live = [g for g in games if g.get('gameState') in ('LIVE', 'CRIT')]
+    future = sorted((g for g in games if g.get('gameState') in ('FUT', 'PRE') and nhl_date(g) and nhl_date(g) >= NOW - dt.timedelta(hours=2)), key=lambda g: g['startTimeUTC'])
+    past = sorted((g for g in games if g.get('gameState') in ('OFF', 'FINAL')), key=lambda g: g.get('startTimeUTC', ''), reverse=True)
+    g = (live or future or past or [None])[0]
+    if not g:
+        return None
+    home = (g.get('homeTeam') or {}).get('abbrev') == abbr
+    mine = g.get('homeTeam') if home else g.get('awayTeam')
+    opp = g.get('awayTeam') if home else g.get('homeTeam')
+    opp_name = (opp or {}).get('placeName') or {}
+    if isinstance(opp_name, dict):
+        opp_name = opp_name.get('default', '')
+    opponent = ((opp or {}).get('abbrev') or opp_name or 'TBD')
+    state = g.get('gameState')
+    status = 'LIVE' if state in ('LIVE', 'CRIT') else 'FINAL' if state in ('OFF', 'FINAL') else 'NEXT'
+    result = {'match': ('vs ' if home else 'at ') + opponent,
+              'detail': status + ' · ' + stamp(g.get('startTimeUTC')),
+              'score': '', 'live': status == 'LIVE'}
+    if status != 'NEXT':
+        result['score'] = f"{(mine or {}).get('score', '–')} – {(opp or {}).get('score', '–')}"
     return result
 
 
@@ -158,16 +216,11 @@ def college(t):
     parser = VisibleText()
     parser.feed(page)
     lines = [html.unescape(x).strip() for x in ''.join(parser.parts).splitlines()]
-    lines = [re.sub(r'\s+', ' ', x) for x in lines if x.strip()]
-    text = '\n'.join(lines)
+    text = '\n'.join(re.sub(r'\s+', ' ', x) for x in lines if x.strip())
     result = {'record': None, 'match': 'Schedule unavailable', 'detail': 'College Hockey News', 'score': ''}
-    # The team's main page shows current season record as "The Latest 2-0-1, .833".
-    m = re.search(r'The Latest\s+(\d+-\d+-\d+)', text, re.I)
-    if not m:
-        m = re.search(r'\bRecord:\s*(\d+-\d+-\d+)', text, re.I)
+    m = re.search(r'The Latest\s+(\d+-\d+-\d+)', text, re.I) or re.search(r'\bRecord:\s*(\d+-\d+-\d+)', text, re.I)
     if m:
         result['record'] = m.group(1)
-    # Team page's Next Game block includes opponent and local Central game time.
     m = re.search(r'Next Game\s+(.+?)\s+(?:October|November|December|January|February|March|April|May|June|July|August|September)\s+\d{1,2},\s+\d{4},\s+\d{1,2}:\d{2}', text, re.I | re.S)
     if m:
         block = m.group(0)
@@ -178,28 +231,30 @@ def college(t):
         if when:
             try:
                 local = dt.datetime.strptime(when.group(1), '%B %d, %Y, %H:%M').replace(tzinfo=CENTRAL)
-                result['detail'] = 'NEXT · ' + local.strftime('%b %-d, %-I:%M %p CT')
+                result['detail'] = 'NEXT · ' + f'{local:%b} {local.day}, {local:%I:%M %p} CT'
             except ValueError:
                 result['detail'] = 'NEXT · ' + when.group(1) + ' CT'
     return result
 
 
 output = {'updated_at': NOW.isoformat(), 'teams': {}}
-for team in TEAMS:
-    key = '/'.join([team['sport'], team['league'], team['name']])
+for t in TEAMS:
+    key = '/'.join([t['sport'], t['league'], t['name']])
     result = {'record': None, 'match': 'Games unavailable', 'detail': 'Feed unavailable', 'score': '', 'logo': ''}
     try:
-        chn = college(team) if team['sport'] == 'hockey' and team['league'] != 'nhl' else None
+        chn = college(t) if t['sport'] == 'hockey' and t['league'] != 'nhl' else None
         if chn:
             result.update(chn)
         else:
-            identity = info(team)
-            if identity:
-                result['logo'] = identity.get('logo', '')
-                result['record'] = record(team, identity)
-                result.update(game(team, identity))
+            ident = identity(t)
+            if ident:
+                result['logo'] = ident.get('logo', '')
+                data = team_data(t, ident)
+                result['record'] = record(data)
+                nhl = game_nhl(t, ident, data) if t['sport'] == 'hockey' and t['league'] == 'nhl' else None
+                result.update(nhl or game_espn(t, ident))
     except Exception as exc:
-        print('Team error:', team['name'], str(exc))
+        print('Team error:', t['name'], str(exc))
     output['teams'][key] = result
-    print(team['name'], result['record'], result['match'], result['detail'])
+    print(t['name'], result['record'], result['match'], result['detail'])
 (ROOT / 'scores.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
