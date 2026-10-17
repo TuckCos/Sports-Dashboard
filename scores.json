@@ -1,19 +1,21 @@
 {
-  "updated_at": "2026-10-17T03:06:14.169105+00:00",
+  "updated_at": "2026-10-17T03:22:25.630278+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "5-2",
-      "match": "Schedule unavailable",
-      "detail": "No schedule returned",
+      "match": "vs CBJ",
+      "detail": "NEXT · Oct 18, 5:00 PM CT",
       "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png"
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+      "live": false
     },
     "hockey/nhl/Washington Capitals": {
       "record": "4-3",
-      "match": "Schedule unavailable",
-      "detail": "No schedule returned",
+      "match": "vs NJD",
+      "detail": "NEXT · Oct 17, 12:00 PM CT",
       "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png"
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
+      "live": false
     },
     "football/nfl/Minnesota Vikings": {
       "record": "5-0",
@@ -38,31 +40,35 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-1",
-      "match": "Schedule unavailable",
-      "detail": "No schedule returned",
+      "match": "vs CAR",
+      "detail": "NEXT · Oct 17, 2:30 PM CT",
       "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png"
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
+      "live": false
     },
     "hockey/nhl/Chicago Blackhawks": {
       "record": "3-5",
-      "match": "Schedule unavailable",
-      "detail": "No schedule returned",
+      "match": "vs DAL",
+      "detail": "NEXT · Oct 17, 6:00 PM CT",
       "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png"
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
+      "live": false
     },
     "hockey/nhl/Dallas Stars": {
       "record": "3-3",
-      "match": "Schedule unavailable",
-      "detail": "No schedule returned",
+      "match": "at CHI",
+      "detail": "NEXT · Oct 17, 6:00 PM CT",
       "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png"
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
+      "live": false
     },
     "hockey/nhl/Colorado Avalanche": {
       "record": "4-2",
-      "match": "Schedule unavailable",
-      "detail": "No schedule returned",
-      "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png"
+      "match": "vs PIT",
+      "detail": "LIVE · Oct 16, 8:00 PM CT",
+      "score": "4 – 2",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
+      "live": true
     },
     "football/nfl/Green Bay Packers": {
       "record": "3-2",
@@ -123,14 +129,14 @@
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
       "record": "3-0-0",
       "match": "vs Bentley",
-      "detail": "NEXT · Oct 17, 6:07 AM CT",
+      "detail": "NEXT · Oct 17, 06:07 AM CT",
       "score": "",
       "logo": ""
     },
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
       "record": "2-0-1",
       "match": "at Omaha",
-      "detail": "NEXT · Oct 17, 6:00 AM CT",
+      "detail": "NEXT · Oct 17, 06:00 AM CT",
       "score": "",
       "logo": ""
     },
