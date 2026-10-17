@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T15:56:05.512265+00:00",
+  "updated_at": "2026-10-17T18:23:03.282094+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "5-2",
@@ -12,10 +12,10 @@
     "hockey/nhl/Washington Capitals": {
       "record": "4-3",
       "match": "vs NJD",
-      "detail": "NEXT · Oct 17, 12:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Oct 17, 12:00 PM CT",
+      "score": "4 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Minnesota Vikings": {
       "record": "5-0",
@@ -128,7 +128,7 @@
       "live": false
     },
     "soccer/eng.2/Wrexham AFC": {
-      "record": "2-5-3",
+      "record": "3-5-3",
       "match": "at Blackburn Rovers",
       "detail": "NEXT · Oct 24, 9:00 AM CT",
       "score": "",
