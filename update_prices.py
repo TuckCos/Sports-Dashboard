@@ -102,6 +102,18 @@ def extract(page):
         raise ValueError("No verified cash bids found; page format may have changed")
     return bid_date, found
 
+def previous_fertilizer():
+    try:
+        previous = json.loads(OUT.read_text(encoding="utf-8"))
+        saved = previous.get("fertilizer", {})
+        return {
+            name: saved.get(name, {})
+            if isinstance(saved.get(name, {}), dict)
+            else {}
+            for name in FERT
+        }
+    except (OSError, ValueError, TypeError):
+        return {name: {} for name in FERT}
 def main():
     req = urllib.request.Request(URL, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=25) as resp:
@@ -112,7 +124,7 @@ def main():
         "cash_bid_date": bid_date.isoformat(),
         "cash_bid_source": URL,
         "crops": crops,
-        "fertilizer": {name: {} for name in FERT}
+        "fertilizer": previous_fertilizer()
     }
     OUT.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
     print(f"Saved {len(crops)} verified Tronson Grain bids dated {bid_date}")
