@@ -97,27 +97,58 @@ def is_mine(c, t, ident):
             team.get('displayName', '').casefold() == t['name'].casefold())
 
 
+# Shared cache prevents a separate network request for every team in a league.
+SCOREBOARD_CACHE = {}
+
+
+def daily_scoreboard(sport, league, day):
+    day_key = day.strftime('%Y%m%d')
+    key = (sport, league, day_key)
+    if key not in SCOREBOARD_CACHE:
+        base = f'https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}'
+        # ESPN's scoreboard uses one calendar date, not a start-end date range.
+        # The old ranged requests returned HTTP 400 for several leagues.
+        url = f'{base}/scoreboard?dates={day_key}'
+        SCOREBOARD_CACHE[key] = events_in(fetch(url))
+    return SCOREBOARD_CACHE[key]
+
+
 def schedule_espn(t, ident):
     sport, league, team_id = t['sport'], t['league'], ident['id']
     base = f'https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}'
-    webbase = f'https://site.web.api.espn.com/apis/v2/sports/{sport}/{league}'
-    # ESPN's site/v2 /teams/{id}/schedule often returns 404. Try web/v2 first.
-    urls = [f'{webbase}/teams/{team_id}/schedule',
-            f'{webbase}/teams/{team_id}/schedule?season={NOW.year}',
-            f'{base}/teams/{team_id}/schedule',
-            f'{base}/schedule?team={team_id}']
-    # Small date windows are more reliable than huge scoreboard requests.
-    for offset in (0, 7, 14, 21, -7):
-        start = (NOW + dt.timedelta(days=offset)).strftime('%Y%m%d')
-        end = (NOW + dt.timedelta(days=offset + 6)).strftime('%Y%m%d')
-        urls.append(f'{base}/scoreboard?dates={start}-{end}&limit=100')
     events = []
-    for url in urls:
-        data = fetch(url)
-        matches = [e for e in events_in(data) if any(is_mine(c, t, ident) for c in competitors(e))]
-        events.extend(matches)
-        if matches and '/schedule' in url:
+
+    # Preserve the existing team-schedule approach for leagues where it works.
+    # The site.web.api.espn.com/apis/v2/.../schedule URLs returned HTTP 404,
+    # so don't waste requests on those URLs.
+    for url in (f'{base}/teams/{team_id}/schedule',
+                f'{base}/schedule?team={team_id}'):
+        matches = [e for e in events_in(fetch(url))
+                   if any(is_mine(c, t, ident) for c in competitors(e))]
+        if matches:
+            events.extend(matches)
             break
+
+    # ESPN league scoreboard requests must be for *single days* in these feeds.
+    # Check more frequently for soccer; NFL fixtures are usually weekly.
+    if not events or not any(((e.get('status') or {}).get('type') or {}).get('state') in ('in', 'pre') for e in events):
+        today = NOW.date()
+        if sport == 'football' and league == 'nfl':
+            # Cover every weekday, since NFL also plays Thu/Mon and occasional Sat.
+            offsets = range(-3, 43)
+        elif sport == 'soccer':
+            offsets = range(-3, 46)
+        else:
+            offsets = range(-2, 22)
+        for offset in offsets:
+            day = today + dt.timedelta(days=offset)
+            matches = [e for e in daily_scoreboard(sport, league, day)
+                       if any(is_mine(c, t, ident) for c in competitors(e))]
+            events.extend(matches)
+            # Once a future fixture is found, later dates are unnecessary.
+            if offset >= 0 and any(((e.get('status') or {}).get('type') or {}).get('state') in ('in', 'pre') for e in matches):
+                break
+
     return list({str(e.get('id', idx)): e for idx, e in enumerate(events)}.values())
 
 
