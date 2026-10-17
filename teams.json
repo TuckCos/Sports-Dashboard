@@ -1,0 +1,182 @@
+[
+  {
+    "id": "min",
+    "name": "Minnesota Wild",
+    "league": "nhl",
+    "sport": "hockey"
+  },
+  {
+    "id": "wsh",
+    "name": "Washington Capitals",
+    "league": "nhl",
+    "sport": "hockey"
+  },
+  {
+    "id": "min",
+    "name": "Minnesota Vikings",
+    "league": "nfl",
+    "sport": "football"
+  },
+  {
+    "id": "min",
+    "name": "Minnesota Twins",
+    "league": "mlb",
+    "sport": "baseball"
+  },
+  {
+    "id": "min",
+    "name": "Minnesota Timberwolves",
+    "league": "nba",
+    "sport": "basketball"
+  },
+  {
+    "id": "wpg",
+    "name": "Winnipeg Jets",
+    "league": "nhl",
+    "sport": "hockey"
+  },
+  {
+    "id": "chi",
+    "name": "Chicago Blackhawks",
+    "league": "nhl",
+    "sport": "hockey"
+  },
+  {
+    "id": "dal",
+    "name": "Dallas Stars",
+    "league": "nhl",
+    "sport": "hockey"
+  },
+  {
+    "id": "col",
+    "name": "Colorado Avalanche",
+    "league": "nhl",
+    "sport": "hockey"
+  },
+  {
+    "id": "gb",
+    "name": "Green Bay Packers",
+    "league": "nfl",
+    "sport": "football"
+  },
+  {
+    "id": "det",
+    "name": "Detroit Lions",
+    "league": "nfl",
+    "sport": "football"
+  },
+  {
+    "id": "chi",
+    "name": "Chicago Bears",
+    "league": "nfl",
+    "sport": "football"
+  },
+  {
+    "id": "kc",
+    "name": "Kansas City Chiefs",
+    "league": "nfl",
+    "sport": "football"
+  },
+  {
+    "id": "buf",
+    "name": "Buffalo Bills",
+    "league": "nfl",
+    "sport": "football"
+  },
+  {
+    "id": "nyy",
+    "name": "New York Yankees",
+    "league": "mlb",
+    "sport": "baseball"
+  },
+  {
+    "id": "bos",
+    "name": "Boston Celtics",
+    "league": "nba",
+    "sport": "basketball"
+  },
+  {
+    "id": null,
+    "name": "Wrexham AFC",
+    "league": "eng.2",
+    "sport": "soccer",
+    "search": "Wrexham"
+  },
+  {
+    "id": null,
+    "name": "North Dakota Fighting Hawks",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "North Dakota"
+  },
+  {
+    "id": null,
+    "name": "Augustana Vikings Men\u2019s Hockey",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Augustana"
+  },
+  {
+    "id": null,
+    "name": "Minnesota Golden Gophers",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Minnesota"
+  },
+  {
+    "id": null,
+    "name": "Denver Pioneers",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Denver"
+  },
+  {
+    "id": null,
+    "name": "Minnesota Duluth Bulldogs",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Minnesota Duluth"
+  },
+  {
+    "id": null,
+    "name": "St. Cloud State Huskies",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "St. Cloud State"
+  },
+  {
+    "id": null,
+    "name": "Wisconsin Badgers",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Wisconsin"
+  },
+  {
+    "id": null,
+    "name": "Michigan Wolverines",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Michigan"
+  },
+  {
+    "id": null,
+    "name": "Boston University Terriers",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Boston University"
+  },
+  {
+    "id": null,
+    "name": "Boston College Eagles",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Boston College"
+  },
+  {
+    "id": null,
+    "name": "Bemidji State Beavers",
+    "league": "mens-college-hockey",
+    "sport": "hockey",
+    "search": "Bemidji State"
+  }
+]
