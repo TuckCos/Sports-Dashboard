@@ -173,8 +173,17 @@ def game_espn(t, ident):
     state = ((e.get('status') or {}).get('type') or {}).get('state')
     opponent = ((other or {}).get('team') or {}).get('displayName') or 'TBD'
     away = (mine or {}).get('homeAway') == 'away'
+    status_obj = e.get('status') or {}
+    live_detail = str(status_obj.get('displayClock') or '').strip()
+    period = status_obj.get('period')
+    if state == 'in':
+        sport_label = ('Period' if t['sport'] == 'hockey' else 'Quarter' if t['sport'] == 'football' else '')
+        clock_label = f'{sport_label} {period}' if period and sport_label else (f'{period}H' if period and t['sport'] == 'soccer' else '')
+        detail = 'LIVE · ' + ' · '.join(x for x in (clock_label, live_detail) if x)
+    else:
+        detail = ('FINAL' if state == 'post' else 'NEXT') + ' · ' + stamp(e.get('date'))
     out = {'match': ('at ' if away else 'vs ') + opponent,
-           'detail': ('LIVE' if state == 'in' else 'FINAL' if state == 'post' else 'NEXT') + ' · ' + stamp(e.get('date')),
+           'detail': detail,
            'score': '', 'live': state == 'in'}
     if state in ('in', 'post') and mine and other:
         def score(c):
@@ -268,6 +277,48 @@ def college(t):
     return result
 
 
+def college_live(t):
+    """Use ESPN's college hockey scoreboard when it includes a current game.
+
+    Keep College Hockey News as the schedule/record fallback. No fake scores.
+    """
+    if not any(k in t['name'].lower() for k in ('north dakota', 'und', 'augustana')):
+        return None
+    for offset in (-1, 0, 1):
+        for e in daily_scoreboard('hockey', 'mens-college-hockey', NOW.date() + dt.timedelta(days=offset)):
+            status = (e.get('status') or {}).get('type') or {}
+            if status.get('state') not in ('in', 'post'):
+                continue
+            cs = competitors(e)
+            def mine(c):
+                name = ((c.get('team') or {}).get('displayName') or '').lower()
+                if 'augustana' in t['name'].lower():
+                    return 'augustana' in name
+                return 'north dakota' in name or name == 'fighting hawks'
+            me = next((c for c in cs if mine(c)), None)
+            other = next((c for c in cs if c is not me), None)
+            if not me or not other:
+                continue
+            event_date = when_utc(e.get('date'))
+            if not event_date or abs((NOW - event_date).total_seconds()) > 24 * 3600:
+                continue
+            def score(c):
+                v = c.get('score', '–')
+                return str(v.get('displayValue', v.get('value', '–'))) if isinstance(v, dict) else str(v)
+            state = status.get('state')
+            status_obj = e.get('status') or {}
+            period = status_obj.get('period')
+            clock = status_obj.get('displayClock') or ''
+            detail = ('LIVE · Period ' + str(period) + (' · ' + clock if clock else '')
+                      if state == 'in' and period else
+                      'LIVE' if state == 'in' else 'FINAL · ' + stamp(e.get('date')))
+            return {'match': ('at ' if me.get('homeAway') == 'away' else 'vs ') +
+                    ((other.get('team') or {}).get('displayName') or 'TBD'),
+                    'detail': detail, 'score': score(me) + ' – ' + score(other),
+                    'live': state == 'in'}
+    return None
+
+
 output = {'updated_at': NOW.isoformat(), 'teams': {}}
 for t in TEAMS:
     key = '/'.join([t['sport'], t['league'], t['name']])
@@ -276,6 +327,9 @@ for t in TEAMS:
         chn = college(t) if t['sport'] == 'hockey' and t['league'] != 'nhl' else None
         if chn:
             result.update(chn)
+            live = college_live(t)
+            if live:
+                result.update(live)
         else:
             ident = identity(t)
             if ident:
