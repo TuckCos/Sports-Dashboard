@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T12:34:30.810002+00:00",
+  "updated_at": "2026-10-17T15:56:05.512265+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "5-2",
@@ -129,8 +129,8 @@
     },
     "soccer/eng.2/Wrexham AFC": {
       "record": "2-5-3",
-      "match": "vs Preston North End",
-      "detail": "NEXT · Oct 17, 9:00 AM CT",
+      "match": "at Blackburn Rovers",
+      "detail": "NEXT · Oct 24, 9:00 AM CT",
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
       "live": false
