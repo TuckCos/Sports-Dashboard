@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T16:53:22.272450+00:00",
+  "updated_at": "2026-10-18T19:17:33.134927+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "5-2",
@@ -91,10 +91,10 @@
     "football/nfl/Chicago Bears": {
       "record": "3-2",
       "match": "at Atlanta Falcons",
-      "detail": "NEXT · Oct 18, 12:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 3 · 4:52",
+      "score": "21 – 7",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Kansas City Chiefs": {
       "record": "4-0",
