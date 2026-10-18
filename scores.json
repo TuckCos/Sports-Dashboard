@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-18T23:03:06.281204+00:00",
+  "updated_at": "2026-10-18T23:40:19.457606+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "5-2",
       "match": "vs CBJ",
-      "detail": "LIVE · Period 2 · 20:00",
-      "score": "1 – 1",
+      "detail": "LIVE · Intermission after 2",
+      "score": "2 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": true
     },
@@ -97,20 +97,20 @@
       "live": false
     },
     "football/nfl/Kansas City Chiefs": {
-      "record": "4-0",
+      "record": "5-0",
       "match": "vs Los Angeles Chargers",
-      "detail": "LIVE · Quarter 4 · 9:43",
-      "score": "19 – 6",
+      "detail": "FINAL · Oct 18, 3:25 PM CT",
+      "score": "22 – 6",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "live": true
+      "live": false
     },
     "football/nfl/Buffalo Bills": {
-      "record": "4-1",
+      "record": "5-1",
       "match": "at Las Vegas Raiders",
-      "detail": "LIVE · Quarter 4 · 8:07",
-      "score": "23 – 23",
+      "detail": "FINAL · Oct 18, 3:25 PM CT",
+      "score": "33 – 30",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-      "live": true
+      "live": false
     },
     "baseball/mlb/New York Yankees": {
       "record": "93-68",
