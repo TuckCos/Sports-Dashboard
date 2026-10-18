@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T23:26:47.675246+00:00",
+  "updated_at": "2026-10-18T01:33:08.142924+00:00",
   "cash_bid_date": "2026-10-16",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
@@ -59,35 +59,35 @@
       "price": 864.75,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-17",
+      "price_date": "2026-10-18",
       "region": "National Average"
     },
     "map": {
       "price": 1128.01,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-17",
+      "price_date": "2026-10-18",
       "region": "National Average"
     },
     "potash": {
       "price": 502.82,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-17",
+      "price_date": "2026-10-18",
       "region": "National Average"
     },
     "ams": {
       "price": 630.0,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-17",
+      "price_date": "2026-10-18",
       "region": "National Average"
     },
     "anhydrous": {
       "price": 905.5,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-17",
+      "price_date": "2026-10-18",
       "region": "National Average"
     }
   }
