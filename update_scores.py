@@ -53,15 +53,29 @@ def identity(t):
     sports = data.get('sports') or [{}]
     leagues = sports[0].get('leagues') or [{}]
     candidates = [x.get('team', x) for x in leagues[0].get('teams', [])]
-    needle = (t.get('search') or t['name']).lower()
-    found = next((x for x in candidates if x.get('displayName', '').lower() == t['name'].lower()), None)
-    if not found:
-        found = next((x for x in candidates if needle in x.get('displayName', '').lower() or needle in x.get('name', '').lower()), None)
+    needle = (t.get('search') or t['name']).casefold()
+    aliases = ['wrexham', 'wrexham afc'] if 'wrexham' in needle else [needle]
+    found = next((x for x in candidates if any(a in ' '.join(str(x.get(k, '')).casefold() for k in ('displayName', 'name', 'shortDisplayName', 'abbreviation')) for a in aliases)), None)
+    if not found and 'wrexham' in needle:
+        # ESPN soccer team IDs can be found in league scoreboards even when
+        # the /teams endpoint does not list all clubs.
+        for offset in range(-2, 9):
+            for event in daily_scoreboard(sport, league, NOW.date() + dt.timedelta(days=offset)):
+                for c in competitors(event):
+                    team = c.get('team') or {}
+                    if 'wrexham' in str(team.get('displayName', '')).casefold():
+                        found = team
+                        break
+                if found:
+                    break
+            if found:
+                break
     if not found:
         return None
-    logos = found.get('logos') or [{}]
-    return {'id': str(found['id']), 'logo': logos[0].get('href', ''), 'abbreviation': found.get('abbreviation', '')}
-
+    logos = found.get('logos') or []
+    logo = (logos[0].get('href') if logos else '') or found.get('logo', '')
+    return {'id': str(found['id']), 'logo': logo,
+            'abbreviation': found.get('abbreviation', '')}
 
 def team_data(t, ident):
     return (fetch(f"https://site.api.espn.com/apis/site/v2/sports/{t['sport']}/{t['league']}/teams/{ident['id']}") or {}).get('team') or {}
@@ -117,56 +131,54 @@ def schedule_espn(t, ident):
     sport, league, team_id = t['sport'], t['league'], ident['id']
     base = f'https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}'
     events = []
-
-    # Preserve the existing team-schedule approach for leagues where it works.
-    # The site.web.api.espn.com/apis/v2/.../schedule URLs returned HTTP 404,
-    # so don't waste requests on those URLs.
-    for url in (f'{base}/teams/{team_id}/schedule',
-                f'{base}/schedule?team={team_id}'):
+    for url in (f'{base}/teams/{team_id}/schedule', f'{base}/schedule?team={team_id}'):
         matches = [e for e in events_in(fetch(url))
                    if any(is_mine(c, t, ident) for c in competitors(e))]
         if matches:
             events.extend(matches)
             break
-
-    # ESPN league scoreboard requests must be for *single days* in these feeds.
-    # Check more frequently for soccer; NFL fixtures are usually weekly.
-    if not events or not any(((e.get('status') or {}).get('type') or {}).get('state') in ('in', 'pre') for e in events):
-        today = NOW.date()
-        if sport == 'football' and league == 'nfl':
-            # Cover every weekday, since NFL also plays Thu/Mon and occasional Sat.
-            offsets = range(-3, 43)
-        elif sport == 'soccer':
-            offsets = range(-3, 46)
-        else:
-            offsets = range(-2, 22)
-        for offset in offsets:
-            day = today + dt.timedelta(days=offset)
-            matches = [e for e in daily_scoreboard(sport, league, day)
-                       if any(is_mine(c, t, ident) for c in competitors(e))]
-            events.extend(matches)
-            # Once a future fixture is found, later dates are unnecessary.
-            if offset >= 0 and any(((e.get('status') or {}).get('type') or {}).get('state') in ('in', 'pre') for e in matches):
-                break
-
+    # Schedules can omit today's in-progress game or recently completed game.
+    # Fetch a narrow scoreboard window, with league-wide cache.
+    local_day = NOW.astimezone(CENTRAL).date()
+    for offset in range(-2, 9):
+        day = local_day + dt.timedelta(days=offset)
+        matches = [e for e in daily_scoreboard(sport, league, day)
+                   if any(is_mine(c, t, ident) for c in competitors(e))]
+        events.extend(matches)
     return list({str(e.get('id', idx)): e for idx, e in enumerate(events)}.values())
+
+
+def cutoff_after_game(e):
+    # Keep a final score until 8 AM Central on the calendar day AFTER
+    # the local game date (not 8 AM UTC).
+    started = when_utc(e.get('date'))
+    if not started:
+        return None
+    next_day = started.astimezone(CENTRAL).date() + dt.timedelta(days=1)
+    return dt.datetime.combine(next_day, dt.time(8, 0), tzinfo=CENTRAL).astimezone(dt.timezone.utc)
 
 
 def choose(events):
     def state(e):
         return ((e.get('status') or {}).get('type') or {}).get('state')
     live = [e for e in events if state(e) == 'in']
+    if live:
+        return live[0]
+    recent = sorted((e for e in events if state(e) == 'post' and
+                     cutoff_after_game(e) and NOW < cutoff_after_game(e)),
+                    key=lambda e: e.get('date', ''), reverse=True)
+    if recent:
+        return recent[0]
     upcoming = sorted((e for e in events if state(e) == 'pre' and
                        (when_utc(e.get('date')) or NOW) >= NOW - dt.timedelta(hours=2)),
                       key=lambda e: e.get('date', ''))
-    recent = sorted((e for e in events if state(e) == 'post'), key=lambda e: e.get('date', ''), reverse=True)
-    return (live or upcoming or recent or [None])[0]
+    return (upcoming or [None])[0]
 
 
 def game_espn(t, ident):
     e = choose(schedule_espn(t, ident))
     if not e:
-        return {'match': 'Schedule unavailable', 'detail': 'No schedule returned', 'score': ''}
+        return {'match': 'Schedule unavailable', 'detail': 'No upcoming game found', 'score': ''}
     cs = competitors(e)
     mine = next((c for c in cs if is_mine(c, t, ident)), None)
     other = next((c for c in cs if c is not mine), None)
@@ -177,14 +189,13 @@ def game_espn(t, ident):
     live_detail = str(status_obj.get('displayClock') or '').strip()
     period = status_obj.get('period')
     if state == 'in':
-        sport_label = ('Period' if t['sport'] == 'hockey' else 'Quarter' if t['sport'] == 'football' else '')
-        clock_label = f'{sport_label} {period}' if period and sport_label else (f'{period}H' if period and t['sport'] == 'soccer' else '')
+        label = ('Period' if t['sport'] == 'hockey' else 'Quarter' if t['sport'] == 'football' else 'Half' if t['sport'] == 'soccer' else 'Inning')
+        clock_label = f'{label} {period}' if period else ''
         detail = 'LIVE · ' + ' · '.join(x for x in (clock_label, live_detail) if x)
     else:
         detail = ('FINAL' if state == 'post' else 'NEXT') + ' · ' + stamp(e.get('date'))
     out = {'match': ('at ' if away else 'vs ') + opponent,
-           'detail': detail,
-           'score': '', 'live': state == 'in'}
+           'detail': detail, 'score': '', 'live': state == 'in'}
     if state in ('in', 'post') and mine and other:
         def score(c):
             value = c.get('score', '–')
@@ -202,23 +213,35 @@ def game_nhl(t, ident, data):
     def nhl_date(g):
         return when_utc(g.get('startTimeUTC'))
     live = [g for g in games if g.get('gameState') in ('LIVE', 'CRIT')]
-    future = sorted((g for g in games if g.get('gameState') in ('FUT', 'PRE') and nhl_date(g) and nhl_date(g) >= NOW - dt.timedelta(hours=2)), key=lambda g: g['startTimeUTC'])
-    past = sorted((g for g in games if g.get('gameState') in ('OFF', 'FINAL')), key=lambda g: g.get('startTimeUTC', ''), reverse=True)
-    g = (live or future or past or [None])[0]
+    recent = sorted((g for g in games if g.get('gameState') in ('OFF', 'FINAL') and
+                     nhl_date(g) and NOW < dt.datetime.combine(
+                         nhl_date(g).astimezone(CENTRAL).date() + dt.timedelta(days=1),
+                         dt.time(8), tzinfo=CENTRAL).astimezone(dt.timezone.utc)),
+                    key=lambda g: g.get('startTimeUTC', ''), reverse=True)
+    future = sorted((g for g in games if g.get('gameState') in ('FUT', 'PRE') and
+                     nhl_date(g) and nhl_date(g) >= NOW - dt.timedelta(hours=2)),
+                    key=lambda g: g['startTimeUTC'])
+    g = (live or recent or future or [None])[0]
     if not g:
         return None
     home = (g.get('homeTeam') or {}).get('abbrev') == abbr
     mine = g.get('homeTeam') if home else g.get('awayTeam')
     opp = g.get('awayTeam') if home else g.get('homeTeam')
-    opp_name = (opp or {}).get('placeName') or {}
-    if isinstance(opp_name, dict):
-        opp_name = opp_name.get('default', '')
-    opponent = ((opp or {}).get('abbrev') or opp_name or 'TBD')
+    opponent = (opp or {}).get('abbrev') or 'TBD'
     state = g.get('gameState')
     status = 'LIVE' if state in ('LIVE', 'CRIT') else 'FINAL' if state in ('OFF', 'FINAL') else 'NEXT'
+    detail = status + ' · ' + stamp(g.get('startTimeUTC'))
+    if status == 'LIVE':
+        landing = fetch(f"https://api-web.nhle.com/v1/gamecenter/{g.get('id')}/landing") or {}
+        period = (landing.get('periodDescriptor') or {}).get('number')
+        clock = (landing.get('clock') or {}).get('timeRemaining', '')
+        in_intermission = (landing.get('clock') or {}).get('inIntermission', False)
+        if period:
+            detail = f"LIVE · {'Intermission after' if in_intermission else 'Period'} {period}"
+            if clock and not in_intermission:
+                detail += ' · ' + str(clock)
     result = {'match': ('vs ' if home else 'at ') + opponent,
-              'detail': status + ' · ' + stamp(g.get('startTimeUTC')),
-              'score': '', 'live': status == 'LIVE'}
+              'detail': detail, 'score': '', 'live': status == 'LIVE'}
     if status != 'NEXT':
         result['score'] = f"{(mine or {}).get('score', '–')} – {(opp or {}).get('score', '–')}"
     return result
@@ -319,27 +342,44 @@ def college_live(t):
     return None
 
 
+# Preserve the last successful game entry if a provider temporarily fails.
+try:
+    PREVIOUS = json.loads((ROOT / 'scores.json').read_text(encoding='utf-8')).get('teams', {})
+except (OSError, ValueError, TypeError):
+    PREVIOUS = {}
+
 output = {'updated_at': NOW.isoformat(), 'teams': {}}
 for t in TEAMS:
     key = '/'.join([t['sport'], t['league'], t['name']])
     result = {'record': None, 'match': 'Games unavailable', 'detail': 'Feed unavailable', 'score': '', 'logo': ''}
     try:
-        chn = college(t) if t['sport'] == 'hockey' and t['league'] != 'nhl' else None
-        if chn:
-            result.update(chn)
+        ident = identity(t)
+        if ident:
+            result['logo'] = ident.get('logo', '')
+            data = team_data(t, ident)
+            result['record'] = record(data)
+            nhl = game_nhl(t, ident, data) if t['sport'] == 'hockey' and t['league'] == 'nhl' else None
+            result.update(nhl or game_espn(t, ident))
+        if t['sport'] == 'hockey' and t['league'] != 'nhl':
+            chn = college(t)
+            # CHN can fill schedule/record gaps, but ESPN live/final wins.
+            if chn:
+                if not result['record']:
+                    result['record'] = chn.get('record')
+                if result['match'] in ('Games unavailable', 'Schedule unavailable'):
+                    result.update({k: v for k, v in chn.items() if k in ('match', 'detail', 'score')})
             live = college_live(t)
-            if live:
+            if live and (live.get('live') or result['match'] in ('Games unavailable', 'Schedule unavailable')):
                 result.update(live)
-        else:
-            ident = identity(t)
-            if ident:
-                result['logo'] = ident.get('logo', '')
-                data = team_data(t, ident)
-                result['record'] = record(data)
-                nhl = game_nhl(t, ident, data) if t['sport'] == 'hockey' and t['league'] == 'nhl' else None
-                result.update(nhl or game_espn(t, ident))
+        if result['match'] in ('Games unavailable', 'Schedule unavailable'):
+            old = PREVIOUS.get(key) or {}
+            if old.get('match') not in (None, 'Games unavailable', 'Schedule unavailable'):
+                result.update(old)
+        if not result.get('logo'):
+            result['logo'] = (PREVIOUS.get(key) or {}).get('logo', '')
     except Exception as exc:
         print('Team error:', t['name'], str(exc))
+        result.update(PREVIOUS.get(key) or {})
     output['teams'][key] = result
     print(t['name'], result['record'], result['match'], result['detail'])
 (ROOT / 'scores.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
