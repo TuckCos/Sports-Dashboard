@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T19:17:33.134927+00:00",
+  "updated_at": "2026-10-18T21:37:20.583899+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "5-2",
@@ -89,28 +89,28 @@
       "live": false
     },
     "football/nfl/Chicago Bears": {
-      "record": "3-2",
-      "match": "at Atlanta Falcons",
-      "detail": "LIVE · Quarter 3 · 4:52",
-      "score": "21 – 7",
+      "record": "4-2",
+      "match": "vs New England Patriots",
+      "detail": "NEXT · Oct 22, 7:15 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "live": true
+      "live": false
     },
     "football/nfl/Kansas City Chiefs": {
       "record": "4-0",
       "match": "vs Los Angeles Chargers",
-      "detail": "NEXT · Oct 18, 3:25 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 1:53",
+      "score": "9 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Buffalo Bills": {
       "record": "4-1",
       "match": "at Las Vegas Raiders",
-      "detail": "NEXT · Oct 18, 3:25 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 0:36",
+      "score": "13 – 10",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-      "live": false
+      "live": true
     },
     "baseball/mlb/New York Yankees": {
       "record": "93-68",
