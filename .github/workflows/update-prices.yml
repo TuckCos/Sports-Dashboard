@@ -3,11 +3,15 @@ name: Refresh market prices
 
 on:
   schedule:
-    - cron: '17,47 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: market-prices
+  cancel-in-progress: false
 
 jobs:
   prices:
