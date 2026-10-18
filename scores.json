@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T21:37:20.583899+00:00",
+  "updated_at": "2026-10-18T22:07:42.608893+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "5-2",
@@ -28,7 +28,7 @@
     "baseball/mlb/Minnesota Twins": {
       "record": "77-85",
       "match": "Schedule unavailable",
-      "detail": "No schedule returned",
+      "detail": "No upcoming game found",
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
     },
@@ -90,32 +90,32 @@
     },
     "football/nfl/Chicago Bears": {
       "record": "4-2",
-      "match": "vs New England Patriots",
-      "detail": "NEXT · Oct 22, 7:15 PM CT",
-      "score": "",
+      "match": "at Atlanta Falcons",
+      "detail": "FINAL · Oct 18, 12:00 PM CT",
+      "score": "31 – 23",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
       "live": false
     },
     "football/nfl/Kansas City Chiefs": {
       "record": "4-0",
       "match": "vs Los Angeles Chargers",
-      "detail": "LIVE · Quarter 2 · 1:53",
-      "score": "9 – 3",
+      "detail": "LIVE · Quarter 3 · 11:30",
+      "score": "19 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "live": true
     },
     "football/nfl/Buffalo Bills": {
       "record": "4-1",
       "match": "at Las Vegas Raiders",
-      "detail": "LIVE · Quarter 2 · 0:36",
-      "score": "13 – 10",
+      "detail": "LIVE · Quarter 3 · 11:47",
+      "score": "13 – 13",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
       "live": true
     },
     "baseball/mlb/New York Yankees": {
       "record": "93-68",
       "match": "Schedule unavailable",
-      "detail": "No schedule returned",
+      "detail": "No upcoming game found",
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
@@ -137,18 +137,18 @@
     },
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
       "record": "4-0-0",
-      "match": "vs Bentley Falcons",
-      "detail": "FINAL · Oct 17, 6:07 PM CT",
-      "score": "5 – 0",
-      "logo": "",
+      "match": "at Minnesota Golden Gophers",
+      "detail": "NEXT · Oct 22, 7:00 PM CT",
+      "score": "",
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
       "live": false
     },
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
       "record": "3-0-1",
-      "match": "at Omaha Mavericks",
-      "detail": "FINAL · Oct 17, 6:00 PM CT",
-      "score": "3 – 2",
-      "logo": "",
+      "match": "at Ohio State Buckeyes",
+      "detail": "NEXT · Oct 23, 5:30 PM CT",
+      "score": "",
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2043.png",
       "live": false
     },
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
@@ -156,7 +156,7 @@
       "match": "vs North Dakota Fighting Hawks",
       "detail": "NEXT · Oct 22, 7:00 PM CT",
       "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2802.png",
       "live": false
     },
     "hockey/mens-college-hockey/Denver Pioneers": {
@@ -193,10 +193,10 @@
     },
     "hockey/mens-college-hockey/Michigan Wolverines": {
       "record": null,
-      "match": "vs Western Michigan Broncos",
+      "match": "at New Hampshire Wildcats",
       "detail": "NEXT · Oct 23, 6:00 PM CT",
       "score": "",
-      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
       "live": false
     },
     "hockey/mens-college-hockey/Boston University Terriers": {
