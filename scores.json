@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-18T23:40:19.457606+00:00",
+  "updated_at": "2026-10-19T01:47:41.333330+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
-      "record": "5-2",
+      "record": "6-2",
       "match": "vs CBJ",
-      "detail": "LIVE · Intermission after 2",
+      "detail": "FINAL · Oct 18, 5:00 PM CT",
       "score": "2 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
-      "live": true
+      "live": false
     },
     "hockey/nhl/Washington Capitals": {
       "record": "5-3",
@@ -75,10 +75,10 @@
     "football/nfl/Green Bay Packers": {
       "record": "3-2",
       "match": "vs Dallas Cowboys",
-      "detail": "NEXT · Oct 18, 7:20 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 0:23",
+      "score": "10 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Detroit Lions": {
       "record": "3-2",
