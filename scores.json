@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T20:13:03.166119+00:00",
+  "updated_at": "2026-10-19T23:47:36.650119+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
@@ -67,10 +67,10 @@
     "hockey/nhl/Colorado Avalanche": {
       "record": "5-2",
       "match": "at PHI",
-      "detail": "NEXT · Oct 19, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 01:50",
+      "score": "0 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Green Bay Packers": {
       "record": "4-2",
