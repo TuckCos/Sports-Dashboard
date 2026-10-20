@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T18:42:45.347774+00:00",
+  "updated_at": "2026-10-20T21:53:12.499062+00:00",
   "cash_bid_date": "2026-10-20",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
@@ -10,7 +10,7 @@
       "delivery": "Oct",
       "bid_date": "2026-10-20",
       "futures": {
-        "price": 6.6225,
+        "price": 6.6175,
         "contract": "Dec 26 MIAX Spring Wheat",
         "unit": "bu"
       }
