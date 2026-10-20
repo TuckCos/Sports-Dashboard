@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T07:44:39.590519+00:00",
+  "updated_at": "2026-10-20T13:03:38.310210+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
@@ -33,7 +33,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
     },
     "basketball/nba/Minnesota Timberwolves": {
-      "record": "3-3",
+      "record": "0-0",
       "match": "at Miami Heat",
       "detail": "NEXT · Oct 21, 6:30 PM CT",
       "score": "",
@@ -66,9 +66,9 @@
     },
     "hockey/nhl/Colorado Avalanche": {
       "record": "5-3",
-      "match": "at PHI",
-      "detail": "FINAL · Oct 19, 6:00 PM CT",
-      "score": "2 – 3",
+      "match": "at NJD",
+      "detail": "NEXT · Oct 20, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
       "live": false
     },
@@ -120,7 +120,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "4-0",
+      "record": "0-0",
       "match": "at Detroit Pistons",
       "detail": "NEXT · Oct 20, 2:00 PM CT",
       "score": "",
