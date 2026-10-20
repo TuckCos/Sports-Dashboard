@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T17:57:50.918440+00:00",
+  "updated_at": "2026-10-20T21:32:14.465011+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
@@ -122,10 +122,10 @@
     "basketball/nba/Boston Celtics": {
       "record": "0-0",
       "match": "at Detroit Pistons",
-      "detail": "NEXT · Oct 20, 2:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Inning 4 · 18.2",
+      "score": "110 – 117",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": false
+      "live": true
     },
     "soccer/eng.2/Wrexham AFC": {
       "record": "3-5-3",
