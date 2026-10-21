@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-21T09:42:27.254812+00:00",
+  "updated_at": "2026-10-21T14:42:30.625626+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
-      "match": "at EDM",
-      "detail": "FINAL · Oct 20, 8:00 PM CT",
-      "score": "3 – 4",
+      "match": "at CGY",
+      "detail": "NEXT · Oct 22, 8:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false
     },
     "hockey/nhl/Washington Capitals": {
       "record": "5-4",
-      "match": "vs LAK",
-      "detail": "FINAL · Oct 20, 6:00 PM CT",
-      "score": "2 – 5",
+      "match": "vs BUF",
+      "detail": "NEXT · Oct 24, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
       "live": false
     },
@@ -42,9 +42,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-3",
-      "match": "at STL",
-      "detail": "FINAL · Oct 20, 7:00 PM CT",
-      "score": "1 – 2",
+      "match": "at DAL",
+      "detail": "NEXT · Oct 22, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false
     },
@@ -58,17 +58,17 @@
     },
     "hockey/nhl/Dallas Stars": {
       "record": "5-3",
-      "match": "vs BOS",
-      "detail": "FINAL · Oct 20, 7:00 PM CT",
-      "score": "3 – 2",
+      "match": "vs WPG",
+      "detail": "NEXT · Oct 22, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false
     },
     "hockey/nhl/Colorado Avalanche": {
       "record": "5-4",
-      "match": "at NJD",
-      "detail": "FINAL · Oct 20, 6:00 PM CT",
-      "score": "3 – 4",
+      "match": "vs TBL",
+      "detail": "NEXT · Oct 23, 8:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
       "live": false
     },
@@ -121,9 +121,9 @@
     },
     "basketball/nba/Boston Celtics": {
       "record": "0-1",
-      "match": "at Detroit Pistons",
-      "detail": "FINAL · Oct 20, 2:00 PM CT",
-      "score": "113 – 121",
+      "match": "vs New York Knicks",
+      "detail": "NEXT · Oct 23, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false
     },
