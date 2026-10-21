@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T21:32:14.465011+00:00",
+  "updated_at": "2026-10-21T00:07:07.359347+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
@@ -12,10 +12,10 @@
     "hockey/nhl/Washington Capitals": {
       "record": "5-3",
       "match": "vs LAK",
-      "detail": "NEXT · Oct 20, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 16:56",
+      "score": "2 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Minnesota Vikings": {
       "record": "5-0",
@@ -67,10 +67,10 @@
     "hockey/nhl/Colorado Avalanche": {
       "record": "5-3",
       "match": "at NJD",
-      "detail": "NEXT · Oct 20, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 17:23",
+      "score": "1 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Green Bay Packers": {
       "record": "4-2",
@@ -120,12 +120,12 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "0-0",
+      "record": "0-1",
       "match": "at Detroit Pistons",
-      "detail": "LIVE · Inning 4 · 18.2",
-      "score": "110 – 117",
+      "detail": "FINAL · Oct 20, 2:00 PM CT",
+      "score": "113 – 121",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": true
+      "live": false
     },
     "soccer/eng.2/Wrexham AFC": {
       "record": "3-5-3",
