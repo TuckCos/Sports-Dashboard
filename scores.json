@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-10-21T00:07:07.359347+00:00",
+  "updated_at": "2026-10-21T04:46:00.585866+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
       "match": "at EDM",
-      "detail": "NEXT · Oct 20, 8:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Oct 20, 8:00 PM CT",
+      "score": "3 – 4",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false
     },
     "hockey/nhl/Washington Capitals": {
-      "record": "5-3",
+      "record": "5-4",
       "match": "vs LAK",
-      "detail": "LIVE · Period 2 · 16:56",
-      "score": "2 – 2",
+      "detail": "FINAL · Oct 20, 6:00 PM CT",
+      "score": "2 – 5",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": true
+      "live": false
     },
     "football/nfl/Minnesota Vikings": {
       "record": "5-0",
@@ -41,10 +41,10 @@
       "live": false
     },
     "hockey/nhl/Winnipeg Jets": {
-      "record": "4-2",
+      "record": "4-3",
       "match": "at STL",
-      "detail": "NEXT · Oct 20, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Oct 20, 7:00 PM CT",
+      "score": "1 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false
     },
@@ -57,20 +57,20 @@
       "live": false
     },
     "hockey/nhl/Dallas Stars": {
-      "record": "4-3",
+      "record": "5-3",
       "match": "vs BOS",
-      "detail": "NEXT · Oct 20, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Oct 20, 7:00 PM CT",
+      "score": "3 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false
     },
     "hockey/nhl/Colorado Avalanche": {
-      "record": "5-3",
+      "record": "5-4",
       "match": "at NJD",
-      "detail": "LIVE · Period 2 · 17:23",
-      "score": "1 – 1",
+      "detail": "FINAL · Oct 20, 6:00 PM CT",
+      "score": "3 – 4",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
-      "live": true
+      "live": false
     },
     "football/nfl/Green Bay Packers": {
       "record": "4-2",
