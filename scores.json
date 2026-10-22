@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T00:45:09.519600+00:00",
+  "updated_at": "2026-10-22T05:29:59.828884+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
@@ -33,12 +33,12 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
     },
     "basketball/nba/Minnesota Timberwolves": {
-      "record": "0-0",
+      "record": "1-0",
       "match": "at Miami Heat",
-      "detail": "LIVE · Inning 2 · 0.0",
-      "score": "69 – 59",
+      "detail": "FINAL · Oct 21, 6:30 PM CT",
+      "score": "131 – 106",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-      "live": true
+      "live": false
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-3",
@@ -186,7 +186,7 @@
     "hockey/mens-college-hockey/Wisconsin Badgers": {
       "record": null,
       "match": "vs Notre Dame Fighting Irish",
-      "detail": "NEXT · Oct 29, 11:00 PM CT",
+      "detail": "NEXT · Oct 30, 7:00 PM CT",
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
       "live": false
