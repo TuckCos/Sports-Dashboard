@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T19:52:15.591751+00:00",
+  "updated_at": "2026-10-23T22:55:02.398856+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-3",
@@ -146,10 +146,10 @@
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
       "record": "3-0-1",
       "match": "at Ohio State Buckeyes",
-      "detail": "NEXT · Oct 23, 5:30 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 6:04",
+      "score": "0 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2043.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
       "record": null,
