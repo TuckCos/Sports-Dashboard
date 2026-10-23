@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-10-23T10:16:03.374854+00:00",
+  "updated_at": "2026-10-23T15:07:35.745063+00:00",
   "cash_bid_date": "2026-10-23",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
     "wheat": {
-      "price": 5.77,
+      "price": 5.73,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Oct",
       "bid_date": "2026-10-23",
       "futures": {
-        "price": 6.4725,
+        "price": 6.43,
         "contract": "Dec 26 MIAX Spring Wheat",
         "unit": "bu"
       }
     },
     "soybeans": {
-      "price": 11.57,
+      "price": 11.64,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Oct",
       "bid_date": "2026-10-23",
       "futures": {
-        "price": 12.5225,
+        "price": 12.5925,
         "contract": "Nov 26 Soybeans",
         "unit": "bu"
       }
     },
     "corn": {
-      "price": 3.68,
+      "price": 3.66,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Oct",
       "bid_date": "2026-10-23",
       "futures": {
-        "price": 4.58,
+        "price": 4.5625,
         "contract": "Dec 26 Corn",
         "unit": "bu"
       }
