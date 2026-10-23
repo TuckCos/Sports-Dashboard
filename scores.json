@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T22:44:26.997443+00:00",
+  "updated_at": "2026-10-23T01:02:00.942129+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-2",
@@ -43,10 +43,10 @@
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-3",
       "match": "at DAL",
-      "detail": "NEXT · Oct 22, 7:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 20:00",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-      "live": false
+      "live": true
     },
     "hockey/nhl/Chicago Blackhawks": {
       "record": "3-6",
@@ -59,10 +59,10 @@
     "hockey/nhl/Dallas Stars": {
       "record": "5-3",
       "match": "vs WPG",
-      "detail": "NEXT · Oct 22, 7:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 20:00",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
-      "live": false
+      "live": true
     },
     "hockey/nhl/Colorado Avalanche": {
       "record": "5-4",
@@ -91,10 +91,10 @@
     "football/nfl/Chicago Bears": {
       "record": "4-2",
       "match": "vs New England Patriots",
-      "detail": "NEXT · Oct 22, 7:15 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 12:16",
+      "score": "10 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Kansas City Chiefs": {
       "record": "5-0",
@@ -138,10 +138,10 @@
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
       "record": "4-0-0",
       "match": "at Minnesota Golden Gophers",
-      "detail": "NEXT · Oct 22, 7:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 17:15",
+      "score": "0 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
       "record": "3-0-1",
@@ -154,10 +154,10 @@
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
       "record": null,
       "match": "vs North Dakota Fighting Hawks",
-      "detail": "NEXT · Oct 22, 7:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 17:15",
+      "score": "1 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2802.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Denver Pioneers": {
       "record": null,
@@ -202,10 +202,10 @@
     "hockey/mens-college-hockey/Boston University Terriers": {
       "record": null,
       "match": "at UConn Huskies",
-      "detail": "NEXT · Oct 22, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 3 · 11:17",
+      "score": "2 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Boston College Eagles": {
       "record": null,
