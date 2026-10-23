@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-23T11:30:36.639272+00:00",
+  "updated_at": "2026-10-23T15:54:04.910180+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-3",
-      "match": "at CGY",
-      "detail": "FINAL · Oct 22, 8:00 PM CT",
-      "score": "1 – 2",
+      "match": "at SEA",
+      "detail": "NEXT · Oct 24, 9:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false
     },
@@ -42,9 +42,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-3",
-      "match": "at DAL",
-      "detail": "FINAL · Oct 22, 7:00 PM CT",
-      "score": "2 – 3",
+      "match": "vs MTL",
+      "detail": "NEXT · Oct 25, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false
     },
@@ -58,9 +58,9 @@
     },
     "hockey/nhl/Dallas Stars": {
       "record": "6-3",
-      "match": "vs WPG",
-      "detail": "FINAL · Oct 22, 7:00 PM CT",
-      "score": "3 – 2",
+      "match": "vs NYI",
+      "detail": "NEXT · Oct 25, 5:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false
     },
@@ -138,8 +138,8 @@
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
       "record": "4-1-0",
       "match": "at Minnesota Golden Gophers",
-      "detail": "FINAL · Oct 22, 7:00 PM CT",
-      "score": "3 – 5",
+      "detail": "NEXT · Oct 23, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
       "live": false
     },
@@ -154,8 +154,8 @@
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
       "record": null,
       "match": "vs North Dakota Fighting Hawks",
-      "detail": "FINAL · Oct 22, 7:00 PM CT",
-      "score": "5 – 3",
+      "detail": "NEXT · Oct 23, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2802.png",
       "live": false
     },
@@ -201,9 +201,9 @@
     },
     "hockey/mens-college-hockey/Boston University Terriers": {
       "record": null,
-      "match": "at UConn Huskies",
-      "detail": "FINAL · Oct 22, 6:00 PM CT",
-      "score": "4 – 5",
+      "match": "vs UConn Huskies",
+      "detail": "NEXT · Oct 24, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
       "live": false
     },
