@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T14:47:34.569426+00:00",
+  "updated_at": "2026-10-24T17:40:50.188648+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-3",
@@ -128,12 +128,12 @@
       "live": false
     },
     "soccer/eng.2/Wrexham AFC": {
-      "record": "3-5-3",
+      "record": "3-5-4",
       "match": "at Blackburn Rovers",
-      "detail": "LIVE · Half 1 · 45'+2'",
-      "score": "0 – 1",
+      "detail": "FINAL · Oct 24, 9:00 AM CT",
+      "score": "0 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
-      "live": true
+      "live": false
     },
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
       "record": "4-2-0",
