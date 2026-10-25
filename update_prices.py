@@ -8,12 +8,16 @@ import json
 import pathlib
 import re
 import urllib.request
+import math
 from bs4 import BeautifulSoup
 
 ROOT = pathlib.Path(__file__).resolve().parent
 URL = "https://www.tronsongrain.com/cash-bids"
 FERT_URL = "https://fertilizerprice.com/"
 OUT = ROOT / "prices.json"
+LOCAL_FERT = ROOT / "local_fertilizer_prices.json"
+DEVILS_LAKE = (48.1128, -98.8651)
+MAX_LOCAL_MILES = 100
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; SportsDashboard/1.0)", "Accept": "text/html"}
 CROPS = {"Spring Wheat": "wheat", "Soybeans": "soybeans", "Corn": "corn", "Canola": "canola", "Pinto Beans": "pinto"}
 FERT = ("urea", "map", "potash", "ams", "anhydrous")
@@ -160,7 +164,71 @@ def merge_fertilizer(previous, fresh):
         else:
             merged[key] = old
     return merged
+    
+def distance_miles(lat1, lon1, lat2, lon2):
+    r = 3958.8
+    a1, a2 = math.radians(lat1), math.radians(lat2)
+    da = math.radians(lat2 - lat1)
+    db = math.radians(lon2 - lon1)
+    h = math.sin(da / 2)**2 + math.cos(a1) * math.cos(a2) * math.sin(db / 2)**2
+    return 2 * r * math.asin(min(1, math.sqrt(h)))
 
+
+def local_fertilizer_prices():
+    if not LOCAL_FERT.exists():
+        return {}
+
+    data = json.loads(LOCAL_FERT.read_text(encoding="utf-8"))
+    quotes = data.get("quotes", [])
+    if not isinstance(quotes, list):
+        raise ValueError("Local fertilizer quotes must be a list")
+
+    found = {}
+    today = dt.datetime.now(dt.timezone.utc).date()
+
+    for q in quotes:
+        try:
+            key = str(q["product"]).lower().strip()
+            if key not in FERT:
+                continue
+
+            lat = float(q["latitude"])
+            lon = float(q["longitude"])
+            miles = distance_miles(*DEVILS_LAKE, lat, lon)
+            if miles > MAX_LOCAL_MILES:
+                continue
+
+            price = float(q["price"])
+            if not 100 <= price <= 3000:
+                continue
+
+            date = dt.date.fromisoformat(q["price_date"])
+            if date > today or (today - date).days > 45:
+                continue
+
+            supplier = str(q["supplier"]).strip()
+            if not supplier:
+                continue
+
+            if str(q.get("unit", "short ton")).lower() != "short ton":
+                continue
+
+            entry = {
+                "price": price,
+                "unit": "short ton",
+                "source": supplier,
+                "price_date": date.isoformat(),
+                "region": "Local - Devils Lake Area",
+                "distance_miles": round(miles, 1)
+            }
+
+            if key not in found or date.isoformat() > found[key]["price_date"]:
+                found[key] = entry
+
+        except (KeyError, ValueError, TypeError, OverflowError):
+            continue
+
+    return found
 
 def main():
     old = previous_data()
@@ -174,6 +242,13 @@ def main():
         fresh_fert = {}
         print(f"Fertilizer source unavailable; retaining last prices: {exc}")
     fertilizer = merge_fertilizer(fertilizer, fresh_fert)
+        try:
+        local = local_fertilizer_prices()
+        for key, quote in local.items():
+            fertilizer[key] = quote
+        print(f"Applied {len(local)} verified local fertilizer prices")
+    except Exception as exc:
+        print(f"Local fertilizer data unavailable: {exc}")
 
     # Crop updates are independent of fertilizer updates.
     try:
