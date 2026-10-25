@@ -241,15 +241,23 @@ def main():
     except Exception as exc:
         fresh_fert = {}
         print(f"Fertilizer source unavailable; retaining last prices: {exc}")
-    fertilizer = merge_fertilizer(fertilizer, fresh_fert)
-        try:
+       # Keep national benchmarks separate from local quotes.
+    previous_national = {
+        key: value
+        for key, value in fertilizer.items()
+        if isinstance(value, dict)
+        and value.get("region") == "National Average"
+    }
+
+    fertilizer = merge_fertilizer(previous_national, fresh_fert)
+
+    try:
         local = local_fertilizer_prices()
         for key, quote in local.items():
             fertilizer[key] = quote
         print(f"Applied {len(local)} verified local fertilizer prices")
     except Exception as exc:
         print(f"Local fertilizer data unavailable: {exc}")
-
     # Crop updates are independent of fertilizer updates.
     try:
         bid_date, crops = extract(get_html(URL))
