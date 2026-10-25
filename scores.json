@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T05:06:01.253174+00:00",
+  "updated_at": "2026-10-25T09:47:49.784175+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "7-3",
@@ -128,7 +128,7 @@
       "live": false
     },
     "soccer/eng.2/Wrexham AFC": {
-      "record": null,
+      "record": "3-5-4",
       "match": "at Blackburn Rovers",
       "detail": "FINAL · Oct 24, 9:00 AM CT",
       "score": "0 – 2",
