@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T22:12:36.711490+00:00",
+  "updated_at": "2026-10-25T00:22:55.400975+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "6-3",
@@ -12,10 +12,10 @@
     "hockey/nhl/Washington Capitals": {
       "record": "5-4",
       "match": "vs BUF",
-      "detail": "NEXT · Oct 24, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 09:25",
+      "score": "2 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": false
+      "live": true
     },
     "football/nfl/Minnesota Vikings": {
       "record": "5-0",
@@ -144,12 +144,12 @@
       "live": false
     },
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
-      "record": "4-0-1",
+      "record": "5-0-1",
       "match": "at Ohio State Buckeyes",
-      "detail": "LIVE · Period 2 · 3:15",
-      "score": "4 – 1",
+      "detail": "FINAL · Oct 24, 4:00 PM CT",
+      "score": "4 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2043.png",
-      "live": true
+      "live": false
     },
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
       "record": null,
@@ -162,18 +162,18 @@
     "hockey/mens-college-hockey/Denver Pioneers": {
       "record": null,
       "match": "vs Boston College Eagles",
-      "detail": "NEXT · Oct 24, 7:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 9:00",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Minnesota Duluth Bulldogs": {
       "record": null,
       "match": "at Bemidji State Beavers",
-      "detail": "NEXT · Oct 24, 6:07 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 3:41",
+      "score": "1 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/134.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/St. Cloud State Huskies": {
       "record": null,
@@ -194,34 +194,34 @@
     "hockey/mens-college-hockey/Michigan Wolverines": {
       "record": null,
       "match": "at New Hampshire Wildcats",
-      "detail": "NEXT · Oct 24, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 6:02",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Boston University Terriers": {
       "record": null,
       "match": "vs UConn Huskies",
-      "detail": "NEXT · Oct 24, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 4:10",
+      "score": "4 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Boston College Eagles": {
       "record": null,
       "match": "at Denver Pioneers",
-      "detail": "NEXT · Oct 24, 7:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 9:00",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
-      "live": false
+      "live": true
     },
     "hockey/mens-college-hockey/Bemidji State Beavers": {
       "record": null,
       "match": "vs Minnesota Duluth Bulldogs",
-      "detail": "NEXT · Oct 24, 6:07 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 3:41",
+      "score": "0 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/132.png",
-      "live": false
+      "live": true
     }
   }
 }
