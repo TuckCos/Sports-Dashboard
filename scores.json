@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T17:36:39.505402+00:00",
+  "updated_at": "2026-10-25T19:57:32.972036+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "7-3",
@@ -44,23 +44,24 @@
       }
     },
     "football/nfl/Minnesota Vikings": {
-      "record": "5-0",
+      "record": "6-0",
       "match": "vs Indianapolis Colts",
-      "detail": "LIVE · Quarter 1 · 0:07",
-      "score": "0 – 7",
+      "detail": "FINAL · Oct 25, 12:00 PM CT",
+      "score": "16 – 10",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "vs Indianapolis Colts",
+        "detail": "FINAL · Oct 25, 12:00 PM CT",
+        "score": "16 – 10",
+        "live": false,
+        "local_date": "2026-10-25"
+      },
       "next": {
         "match": "at Detroit Lions",
         "detail": "NEXT · Nov 1, 12:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs Indianapolis Colts",
-        "detail": "LIVE · Quarter 1 · 0:07",
-        "score": "0 – 7",
-        "live": true
       }
     },
     "baseball/mlb/Minnesota Twins": {
@@ -115,10 +116,10 @@
     "hockey/nhl/Chicago Blackhawks": {
       "record": "3-7",
       "match": "vs FLA",
-      "detail": "NEXT · Oct 25, 2:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Intermission after 1",
+      "score": "1 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs MTL",
         "detail": "FINAL · Oct 23, 7:00 PM CT",
@@ -127,10 +128,16 @@
         "local_date": "2026-10-23"
       },
       "next": {
-        "match": "vs FLA",
-        "detail": "NEXT · Oct 25, 2:00 PM CT",
+        "match": "vs LAK",
+        "detail": "NEXT · Oct 27, 7:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs FLA",
+        "detail": "LIVE · Intermission after 1",
+        "score": "1 – 2",
+        "live": true
       }
     },
     "hockey/nhl/Dallas Stars": {
