@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T13:59:04.092951+00:00",
+  "updated_at": "2026-10-25T17:36:39.505402+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "7-3",
@@ -46,15 +46,21 @@
     "football/nfl/Minnesota Vikings": {
       "record": "5-0",
       "match": "vs Indianapolis Colts",
-      "detail": "NEXT · Oct 25, 12:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 1 · 0:07",
+      "score": "0 – 7",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "vs Indianapolis Colts",
-        "detail": "NEXT · Oct 25, 12:00 PM CT",
+        "match": "at Detroit Lions",
+        "detail": "NEXT · Nov 1, 12:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Indianapolis Colts",
+        "detail": "LIVE · Quarter 1 · 0:07",
+        "score": "0 – 7",
+        "live": true
       }
     },
     "baseball/mlb/Minnesota Twins": {
