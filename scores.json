@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T19:57:32.972036+00:00",
+  "updated_at": "2026-10-25T22:28:08.284828+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "7-3",
@@ -114,39 +114,33 @@
       }
     },
     "hockey/nhl/Chicago Blackhawks": {
-      "record": "3-7",
+      "record": "3-8",
       "match": "vs FLA",
-      "detail": "LIVE · Intermission after 1",
-      "score": "1 – 2",
+      "detail": "FINAL · Oct 25, 2:00 PM CT",
+      "score": "2 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs MTL",
-        "detail": "FINAL · Oct 23, 7:00 PM CT",
-        "score": "1 – 4",
+        "match": "vs FLA",
+        "detail": "FINAL · Oct 25, 2:00 PM CT",
+        "score": "2 – 3",
         "live": false,
-        "local_date": "2026-10-23"
+        "local_date": "2026-10-25"
       },
       "next": {
         "match": "vs LAK",
         "detail": "NEXT · Oct 27, 7:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs FLA",
-        "detail": "LIVE · Intermission after 1",
-        "score": "1 – 2",
-        "live": true
       }
     },
     "hockey/nhl/Dallas Stars": {
       "record": "6-3",
       "match": "vs NYI",
-      "detail": "NEXT · Oct 25, 5:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 07:34",
+      "score": "1 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs WPG",
         "detail": "FINAL · Oct 22, 7:00 PM CT",
@@ -155,10 +149,16 @@
         "local_date": "2026-10-22"
       },
       "next": {
-        "match": "vs NYI",
-        "detail": "NEXT · Oct 25, 5:00 PM CT",
+        "match": "vs NJD",
+        "detail": "NEXT · Oct 27, 7:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs NYI",
+        "detail": "LIVE · Period 1 · 07:34",
+        "score": "1 – 0",
+        "live": true
       }
     },
     "hockey/nhl/Colorado Avalanche": {
@@ -185,29 +185,41 @@
     "football/nfl/Green Bay Packers": {
       "record": "4-2",
       "match": "at Detroit Lions",
-      "detail": "NEXT · Oct 25, 3:25 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 3 · 5:25",
+      "score": "14 – 17",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "at Detroit Lions",
-        "detail": "NEXT · Oct 25, 3:25 PM CT",
+        "match": "vs Carolina Panthers",
+        "detail": "NEXT · Oct 29, 7:15 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Detroit Lions",
+        "detail": "LIVE · Quarter 3 · 5:25",
+        "score": "14 – 17",
+        "live": true
       }
     },
     "football/nfl/Detroit Lions": {
       "record": "3-2",
       "match": "vs Green Bay Packers",
-      "detail": "NEXT · Oct 25, 3:25 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 3 · 5:25",
+      "score": "17 – 14",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "vs Green Bay Packers",
-        "detail": "NEXT · Oct 25, 3:25 PM CT",
+        "match": "vs Minnesota Vikings",
+        "detail": "NEXT · Nov 1, 12:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Green Bay Packers",
+        "detail": "LIVE · Quarter 3 · 5:25",
+        "score": "17 – 14",
+        "live": true
       }
     },
     "football/nfl/Chicago Bears": {
