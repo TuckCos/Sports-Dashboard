@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-28T07:22:41.547894+00:00",
+  "updated_at": "2026-10-28T14:18:34.520516+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "9-3",
-      "match": "at UTA",
-      "detail": "FINAL · Oct 27, 8:00 PM CT",
-      "score": "3 – 1",
+      "match": "vs NYI",
+      "detail": "NEXT · Oct 29, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false,
       "last": {
@@ -87,9 +87,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-5",
-      "match": "vs FLA",
-      "detail": "FINAL · Oct 27, 7:00 PM CT",
-      "score": "1 – 5",
+      "match": "at TBL",
+      "detail": "NEXT · Oct 29, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false,
       "last": {
@@ -108,9 +108,9 @@
     },
     "hockey/nhl/Chicago Blackhawks": {
       "record": "4-8",
-      "match": "vs LAK",
-      "detail": "FINAL · Oct 27, 7:00 PM CT",
-      "score": "2 – 1",
+      "match": "at DET",
+      "detail": "NEXT · Oct 29, 6:30 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
       "live": false,
       "last": {
@@ -129,9 +129,9 @@
     },
     "hockey/nhl/Dallas Stars": {
       "record": "7-4",
-      "match": "vs NJD",
-      "detail": "FINAL · Oct 27, 7:00 PM CT",
-      "score": "1 – 5",
+      "match": "vs MTL",
+      "detail": "NEXT · Oct 29, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false,
       "last": {
@@ -248,9 +248,9 @@
     },
     "basketball/nba/Boston Celtics": {
       "record": "3-1",
-      "match": "vs Brooklyn Nets",
-      "detail": "FINAL · Oct 27, 6:30 PM CT",
-      "score": "125 – 124",
+      "match": "vs Chicago Bulls",
+      "detail": "NEXT · Oct 30, 6:30 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
       "last": {
