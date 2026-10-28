@@ -1,31 +1,25 @@
 {
-  "updated_at": "2026-10-28T01:32:51.223896+00:00",
+  "updated_at": "2026-10-28T07:22:41.547894+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
-      "record": "8-3",
+      "record": "9-3",
       "match": "at UTA",
-      "detail": "LIVE · Period 1 · 08:10",
-      "score": "0 – 0",
+      "detail": "FINAL · Oct 27, 8:00 PM CT",
+      "score": "3 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at VAN",
-        "detail": "FINAL · Oct 25, 9:00 PM CT",
-        "score": "4 – 2",
+        "match": "at UTA",
+        "detail": "FINAL · Oct 27, 8:00 PM CT",
+        "score": "3 – 1",
         "live": false,
-        "local_date": "2026-10-25"
+        "local_date": "2026-10-27"
       },
       "next": {
         "match": "vs NYI",
         "detail": "NEXT · Oct 29, 7:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at UTA",
-        "detail": "LIVE · Period 1 · 08:10",
-        "score": "0 – 0",
-        "live": true
       }
     },
     "hockey/nhl/Washington Capitals": {
@@ -56,13 +50,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
       "live": false,
-      "last": {
-        "match": "vs Indianapolis Colts",
-        "detail": "FINAL · Oct 25, 12:00 PM CT",
-        "score": "16 – 10",
-        "live": false,
-        "local_date": "2026-10-25"
-      },
       "next": {
         "match": "at Detroit Lions",
         "detail": "NEXT · Nov 1, 12:00 PM CT",
@@ -99,84 +86,66 @@
       }
     },
     "hockey/nhl/Winnipeg Jets": {
-      "record": "4-4",
+      "record": "4-5",
       "match": "vs FLA",
-      "detail": "LIVE · Period 2 · 07:59",
-      "score": "0 – 3",
+      "detail": "FINAL · Oct 27, 7:00 PM CT",
+      "score": "1 – 5",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs MTL",
-        "detail": "FINAL · Oct 25, 6:00 PM CT",
-        "score": "1 – 2",
+        "match": "vs FLA",
+        "detail": "FINAL · Oct 27, 7:00 PM CT",
+        "score": "1 – 5",
         "live": false,
-        "local_date": "2026-10-25"
+        "local_date": "2026-10-27"
       },
       "next": {
         "match": "at TBL",
         "detail": "NEXT · Oct 29, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs FLA",
-        "detail": "LIVE · Period 2 · 07:59",
-        "score": "0 – 3",
-        "live": true
       }
     },
     "hockey/nhl/Chicago Blackhawks": {
-      "record": "3-8",
+      "record": "4-8",
       "match": "vs LAK",
-      "detail": "LIVE · Period 2 · 05:34",
-      "score": "0 – 1",
+      "detail": "FINAL · Oct 27, 7:00 PM CT",
+      "score": "2 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs FLA",
-        "detail": "FINAL · Oct 25, 2:00 PM CT",
-        "score": "2 – 3",
+        "match": "vs LAK",
+        "detail": "FINAL · Oct 27, 7:00 PM CT",
+        "score": "2 – 1",
         "live": false,
-        "local_date": "2026-10-25"
+        "local_date": "2026-10-27"
       },
       "next": {
         "match": "at DET",
         "detail": "NEXT · Oct 29, 6:30 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs LAK",
-        "detail": "LIVE · Period 2 · 05:34",
-        "score": "0 – 1",
-        "live": true
       }
     },
     "hockey/nhl/Dallas Stars": {
-      "record": "7-3",
+      "record": "7-4",
       "match": "vs NJD",
-      "detail": "LIVE · Period 2 · 04:58",
-      "score": "0 – 3",
+      "detail": "FINAL · Oct 27, 7:00 PM CT",
+      "score": "1 – 5",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs NYI",
-        "detail": "FINAL · Oct 25, 5:00 PM CT",
-        "score": "6 – 3",
+        "match": "vs NJD",
+        "detail": "FINAL · Oct 27, 7:00 PM CT",
+        "score": "1 – 5",
         "live": false,
-        "local_date": "2026-10-25"
+        "local_date": "2026-10-27"
       },
       "next": {
         "match": "vs MTL",
         "detail": "NEXT · Oct 29, 7:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs NJD",
-        "detail": "LIVE · Period 2 · 04:58",
-        "score": "0 – 3",
-        "live": true
       }
     },
     "hockey/nhl/Colorado Avalanche": {
@@ -207,13 +176,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
       "live": false,
-      "last": {
-        "match": "at Detroit Lions",
-        "detail": "FINAL · Oct 25, 3:25 PM CT",
-        "score": "17 – 20",
-        "live": false,
-        "local_date": "2026-10-25"
-      },
       "next": {
         "match": "vs Carolina Panthers",
         "detail": "NEXT · Oct 29, 7:15 PM CT",
@@ -228,13 +190,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
       "live": false,
-      "last": {
-        "match": "vs Green Bay Packers",
-        "detail": "FINAL · Oct 25, 3:25 PM CT",
-        "score": "20 – 17",
-        "live": false,
-        "local_date": "2026-10-25"
-      },
       "next": {
         "match": "vs Minnesota Vikings",
         "detail": "NEXT · Nov 1, 12:00 PM CT",
@@ -263,13 +218,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "live": false,
-      "last": {
-        "match": "at Seattle Seahawks",
-        "detail": "FINAL · Oct 25, 7:20 PM CT",
-        "score": "3 – 20",
-        "live": false,
-        "local_date": "2026-10-25"
-      },
       "next": {
         "match": "at Denver Broncos",
         "detail": "NEXT · Nov 1, 3:25 PM CT",
@@ -299,30 +247,24 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "2-1",
+      "record": "3-1",
       "match": "vs Brooklyn Nets",
-      "detail": "LIVE · Inning 4 · 7:39",
-      "score": "97 – 93",
+      "detail": "FINAL · Oct 27, 6:30 PM CT",
+      "score": "125 – 124",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs Chicago Bulls",
-        "detail": "FINAL · Oct 26, 6:30 PM CT",
-        "score": "134 – 99",
+        "match": "vs Brooklyn Nets",
+        "detail": "FINAL · Oct 27, 6:30 PM CT",
+        "score": "125 – 124",
         "live": false,
-        "local_date": "2026-10-26"
+        "local_date": "2026-10-27"
       },
       "next": {
         "match": "vs Chicago Bulls",
         "detail": "NEXT · Oct 30, 6:30 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs Brooklyn Nets",
-        "detail": "LIVE · Inning 4 · 7:39",
-        "score": "97 – 93",
-        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
