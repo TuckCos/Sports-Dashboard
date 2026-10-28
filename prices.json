@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T22:22:57.269093+00:00",
+  "updated_at": "2026-10-28T01:28:54.360620+00:00",
   "cash_bid_date": "2026-10-27",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
@@ -16,25 +16,25 @@
       }
     },
     "soybeans": {
-      "price": 11.34,
+      "price": 11.36,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Oct",
       "bid_date": "2026-10-27",
       "futures": {
-        "price": 12.2925,
+        "price": 12.31,
         "contract": "Nov 26 Soybeans",
         "unit": "bu"
       }
     },
     "corn": {
-      "price": 3.59,
+      "price": 3.6,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Oct",
       "bid_date": "2026-10-27",
       "futures": {
-        "price": 4.4875,
+        "price": 4.5025,
         "contract": "Dec 26 Corn",
         "unit": "bu"
       }
@@ -59,35 +59,35 @@
       "price": 730.0,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-27",
+      "price_date": "2026-10-28",
       "region": "National Average"
     },
     "map": {
       "price": 1066.09,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-27",
+      "price_date": "2026-10-28",
       "region": "National Average"
     },
     "potash": {
       "price": 535.2,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-27",
+      "price_date": "2026-10-28",
       "region": "National Average"
     },
     "ams": {
       "price": 532.67,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-27",
+      "price_date": "2026-10-28",
       "region": "National Average"
     },
     "anhydrous": {
       "price": 885.92,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-27",
+      "price_date": "2026-10-28",
       "region": "National Average"
     }
   }
