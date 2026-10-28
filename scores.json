@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T19:41:45.809705+00:00",
+  "updated_at": "2026-10-28T23:38:23.511172+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "9-3",
@@ -25,10 +25,10 @@
     "hockey/nhl/Washington Capitals": {
       "record": "6-4",
       "match": "vs PHI",
-      "detail": "NEXT · Oct 28, 6:30 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 20:00",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs BUF",
         "detail": "FINAL · Oct 24, 6:00 PM CT",
@@ -37,10 +37,16 @@
         "local_date": "2026-10-24"
       },
       "next": {
-        "match": "vs PHI",
-        "detail": "NEXT · Oct 28, 6:30 PM CT",
+        "match": "at NSH",
+        "detail": "NEXT · Oct 29, 7:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs PHI",
+        "detail": "LIVE · Period 1 · 20:00",
+        "score": "0 – 0",
+        "live": true
       }
     },
     "football/nfl/Minnesota Vikings": {
