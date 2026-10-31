@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T08:50:10.189845+00:00",
+  "updated_at": "2026-10-31T14:56:36.901430+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "9-3",
@@ -66,9 +66,9 @@
     },
     "basketball/nba/Minnesota Timberwolves": {
       "record": "4-2",
-      "match": "vs LA Clippers",
-      "detail": "FINAL · Oct 30, 7:00 PM CT",
-      "score": "127 – 101",
+      "match": "at San Antonio Spurs",
+      "detail": "NEXT · Oct 31, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
@@ -87,9 +87,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-7",
-      "match": "at FLA",
-      "detail": "FINAL · Oct 30, 6:00 PM CT",
-      "score": "2 – 5",
+      "match": "at CAR",
+      "detail": "NEXT · Nov 1, 12:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false,
       "last": {
@@ -255,9 +255,9 @@
     },
     "basketball/nba/Boston Celtics": {
       "record": "4-1",
-      "match": "vs Chicago Bulls",
-      "detail": "FINAL · Oct 30, 6:30 PM CT",
-      "score": "125 – 111",
+      "match": "at Orlando Magic",
+      "detail": "NEXT · Nov 1, 2:30 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
       "last": {
@@ -276,9 +276,9 @@
     },
     "soccer/eng.2/Wrexham AFC": {
       "record": "3-5-5",
-      "match": "at Sheffield United",
-      "detail": "FINAL · Oct 30, 3:00 PM CT",
-      "score": "0 – 1",
+      "match": "vs Middlesbrough",
+      "detail": "NEXT · Nov 4, 1:45 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
       "live": false,
       "last": {
@@ -312,8 +312,8 @@
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
       "record": "6-0-1",
       "match": "vs Northern Michigan Wildcats",
-      "detail": "FINAL · Oct 30, 7:07 PM CT",
-      "score": "12 – 0",
+      "detail": "NEXT · Oct 31, 6:07 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2043.png",
       "live": false,
       "last": {
@@ -333,8 +333,8 @@
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
       "record": null,
       "match": "vs Penn State Nittany Lions",
-      "detail": "FINAL · Oct 30, 7:00 PM CT",
-      "score": "1 – 1",
+      "detail": "NEXT · Oct 31, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2802.png",
       "live": false,
       "last": {
@@ -354,8 +354,8 @@
     "hockey/mens-college-hockey/Denver Pioneers": {
       "record": null,
       "match": "vs Omaha Mavericks",
-      "detail": "FINAL · Oct 30, 8:00 PM CT",
-      "score": "2 – 1",
+      "detail": "NEXT · Oct 31, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
       "live": false,
       "last": {
@@ -375,8 +375,8 @@
     "hockey/mens-college-hockey/Minnesota Duluth Bulldogs": {
       "record": null,
       "match": "at Colorado College Tigers",
-      "detail": "FINAL · Oct 30, 8:00 PM CT",
-      "score": "1 – 0",
+      "detail": "NEXT · Oct 31, 8:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/134.png",
       "live": false,
       "last": {
@@ -396,8 +396,8 @@
     "hockey/mens-college-hockey/St. Cloud State Huskies": {
       "record": null,
       "match": "vs Arizona State Sun Devils",
-      "detail": "FINAL · Oct 30, 7:00 PM CT",
-      "score": "2 – 3",
+      "detail": "NEXT · Oct 31, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2594.png",
       "live": false,
       "last": {
@@ -417,8 +417,8 @@
     "hockey/mens-college-hockey/Wisconsin Badgers": {
       "record": null,
       "match": "vs Notre Dame Fighting Irish",
-      "detail": "FINAL · Oct 30, 7:00 PM CT",
-      "score": "7 – 1",
+      "detail": "NEXT · Oct 31, 5:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
       "live": false,
       "last": {
@@ -452,8 +452,8 @@
     "hockey/mens-college-hockey/Boston University Terriers": {
       "record": null,
       "match": "vs Maine Black Bears",
-      "detail": "FINAL · Oct 30, 6:00 PM CT",
-      "score": "7 – 2",
+      "detail": "NEXT · Oct 31, 5:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
       "live": false,
       "last": {
@@ -473,8 +473,8 @@
     "hockey/mens-college-hockey/Boston College Eagles": {
       "record": null,
       "match": "vs Northeastern Huskies",
-      "detail": "FINAL · Oct 30, 6:00 PM CT",
-      "score": "3 – 2",
+      "detail": "NEXT · Oct 31, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
       "live": false,
       "last": {
@@ -494,8 +494,8 @@
     "hockey/mens-college-hockey/Bemidji State Beavers": {
       "record": null,
       "match": "vs Ferris State Bulldogs",
-      "detail": "FINAL · Oct 30, 7:07 PM CT",
-      "score": "6 – 1",
+      "detail": "NEXT · Oct 31, 6:07 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/132.png",
       "live": false,
       "last": {
