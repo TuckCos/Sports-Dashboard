@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:28:35.483182+00:00",
+  "updated_at": "2026-10-31T00:56:37.449011+00:00",
   "cash_bid_date": "2026-10-30",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
@@ -10,7 +10,7 @@
       "delivery": "Nov",
       "bid_date": "2026-10-30",
       "futures": {
-        "price": 6.2375,
+        "price": 6.245,
         "contract": "Dec 26 MIAX Spring Wheat",
         "unit": "bu"
       }
@@ -22,19 +22,19 @@
       "delivery": "Nov",
       "bid_date": "2026-10-30",
       "futures": {
-        "price": 12.3425,
+        "price": 12.34,
         "contract": "Jan 27 Soybeans",
         "unit": "bu"
       }
     },
     "corn": {
-      "price": 3.58,
+      "price": 3.57,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-10-30",
       "futures": {
-        "price": 4.4775,
+        "price": 4.475,
         "contract": "Dec 26 Corn",
         "unit": "bu"
       }
@@ -59,35 +59,35 @@
       "price": 824.49,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-30",
+      "price_date": "2026-10-31",
       "region": "National Average"
     },
     "map": {
       "price": 1100.52,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-30",
+      "price_date": "2026-10-31",
       "region": "National Average"
     },
     "potash": {
       "price": 610.12,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-30",
+      "price_date": "2026-10-31",
       "region": "National Average"
     },
     "ams": {
       "price": 593.69,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-30",
+      "price_date": "2026-10-31",
       "region": "National Average"
     },
     "anhydrous": {
       "price": 881.42,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-10-30",
+      "price_date": "2026-10-31",
       "region": "National Average"
     }
   }
