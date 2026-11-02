@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T02:29:17.528982+00:00",
+  "updated_at": "2026-11-02T09:54:16.516473+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "10-3",
@@ -302,13 +302,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
       "live": false,
-      "last": {
-        "match": "at Sheffield United",
-        "detail": "FINAL · Oct 30, 3:00 PM CT",
-        "score": "0 – 1",
-        "live": false,
-        "local_date": "2026-10-30"
-      },
       "next": {
         "match": "vs Middlesbrough",
         "detail": "NEXT · Nov 4, 1:45 PM CT",
@@ -466,28 +459,22 @@
     "hockey/mens-college-hockey/Michigan Wolverines": {
       "record": null,
       "match": "at Ohio State Buckeyes",
-      "detail": "LIVE · Period 3 · 9:10",
-      "score": "3 – 2",
+      "detail": "FINAL · Nov 1, 6:30 PM CT",
+      "score": "5 – 4",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at North Dakota Fighting Hawks",
-        "detail": "FINAL · Oct 31, 7:07 PM CT",
-        "score": "5 – 3",
+        "match": "at Ohio State Buckeyes",
+        "detail": "FINAL · Nov 1, 6:30 PM CT",
+        "score": "5 – 4",
         "live": false,
-        "local_date": "2026-10-31"
+        "local_date": "2026-11-01"
       },
       "next": {
         "match": "vs Boston University Terriers",
         "detail": "NEXT · Nov 6, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Ohio State Buckeyes",
-        "detail": "LIVE · Period 3 · 9:10",
-        "score": "3 – 2",
-        "live": true
       }
     },
     "hockey/mens-college-hockey/Boston University Terriers": {
