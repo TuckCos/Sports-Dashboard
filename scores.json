@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T17:52:35.118349+00:00",
+  "updated_at": "2026-11-04T23:17:03.605772+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "11-3",
@@ -275,15 +275,22 @@
       }
     },
     "soccer/eng.2/Wrexham AFC": {
-      "record": "3-5-5",
+      "record": "4-5-5",
       "match": "vs Middlesbrough",
-      "detail": "NEXT · Nov 4, 1:45 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 4, 1:45 PM CT",
+      "score": "2 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
       "live": false,
-      "next": {
+      "last": {
         "match": "vs Middlesbrough",
-        "detail": "NEXT · Nov 4, 1:45 PM CT",
+        "detail": "FINAL · Nov 4, 1:45 PM CT",
+        "score": "2 – 0",
+        "live": false,
+        "local_date": "2026-11-04"
+      },
+      "next": {
+        "match": "vs Wolverhampton Wanderers",
+        "detail": "NEXT · Nov 7, 6:30 AM CT",
         "score": "",
         "live": false
       }
