@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-04T09:54:29.946707+00:00",
+  "updated_at": "2026-11-04T17:52:35.118349+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "11-3",
-      "match": "at PHI",
-      "detail": "FINAL · Nov 3, 6:00 PM CT",
-      "score": "4 – 2",
+      "match": "vs SJS",
+      "detail": "NEXT · Nov 6, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false,
       "last": {
@@ -24,9 +24,9 @@
     },
     "hockey/nhl/Washington Capitals": {
       "record": "8-6",
-      "match": "vs DAL",
-      "detail": "FINAL · Nov 3, 6:00 PM CT",
-      "score": "5 – 6",
+      "match": "vs FLA",
+      "detail": "NEXT · Nov 7, 11:30 AM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
       "live": false,
       "last": {
@@ -87,9 +87,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "5-8",
-      "match": "at MTL",
-      "detail": "FINAL · Nov 3, 6:00 PM CT",
-      "score": "5 – 4",
+      "match": "vs VAN",
+      "detail": "NEXT · Nov 5, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false,
       "last": {
@@ -129,9 +129,9 @@
     },
     "hockey/nhl/Dallas Stars": {
       "record": "9-5",
-      "match": "at WSH",
-      "detail": "FINAL · Nov 3, 6:00 PM CT",
-      "score": "6 – 5",
+      "match": "at CBJ",
+      "detail": "NEXT · Nov 5, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false,
       "last": {
@@ -150,9 +150,9 @@
     },
     "hockey/nhl/Colorado Avalanche": {
       "record": "9-6",
-      "match": "at CBJ",
-      "detail": "FINAL · Nov 3, 6:00 PM CT",
-      "score": "2 – 7",
+      "match": "vs NSH",
+      "detail": "NEXT · Nov 5, 8:30 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
       "live": false,
       "last": {
