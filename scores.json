@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-04T02:39:03.082835+00:00",
+  "updated_at": "2026-11-04T09:54:29.946707+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
-      "record": "10-3",
+      "record": "11-3",
       "match": "at PHI",
       "detail": "FINAL · Nov 3, 6:00 PM CT",
       "score": "4 – 2",
@@ -23,30 +23,24 @@
       }
     },
     "hockey/nhl/Washington Capitals": {
-      "record": "8-5",
+      "record": "8-6",
       "match": "vs DAL",
-      "detail": "LIVE · Period 3 · 00:07",
+      "detail": "FINAL · Nov 3, 6:00 PM CT",
       "score": "5 – 6",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs MIN",
-        "detail": "FINAL · Nov 1, 2:30 PM CT",
-        "score": "1 – 5",
+        "match": "vs DAL",
+        "detail": "FINAL · Nov 3, 6:00 PM CT",
+        "score": "5 – 6",
         "live": false,
-        "local_date": "2026-11-01"
+        "local_date": "2026-11-03"
       },
       "next": {
         "match": "vs FLA",
         "detail": "NEXT · Nov 7, 11:30 AM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs DAL",
-        "detail": "LIVE · Period 3 · 00:07",
-        "score": "5 – 6",
-        "live": true
       }
     },
     "football/nfl/Minnesota Vikings": {
@@ -56,13 +50,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
       "live": false,
-      "last": {
-        "match": "at Detroit Lions",
-        "detail": "FINAL · Nov 1, 12:00 PM CT",
-        "score": "15 – 19",
-        "live": false,
-        "local_date": "2026-11-01"
-      },
       "next": {
         "match": "vs Buffalo Bills",
         "detail": "NEXT · Nov 9, 7:15 PM CT",
@@ -99,30 +86,24 @@
       }
     },
     "hockey/nhl/Winnipeg Jets": {
-      "record": "4-8",
+      "record": "5-8",
       "match": "at MTL",
-      "detail": "LIVE · Period 3 · 04:58",
-      "score": "0 – 4",
+      "detail": "FINAL · Nov 3, 6:00 PM CT",
+      "score": "5 – 4",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at CAR",
-        "detail": "FINAL · Nov 1, 12:00 PM CT",
-        "score": "0 – 7",
+        "match": "at MTL",
+        "detail": "FINAL · Nov 3, 6:00 PM CT",
+        "score": "5 – 4",
         "live": false,
-        "local_date": "2026-11-01"
+        "local_date": "2026-11-03"
       },
       "next": {
         "match": "vs VAN",
         "detail": "NEXT · Nov 5, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at MTL",
-        "detail": "LIVE · Period 3 · 04:58",
-        "score": "0 – 4",
-        "live": true
       }
     },
     "hockey/nhl/Chicago Blackhawks": {
@@ -147,34 +128,28 @@
       }
     },
     "hockey/nhl/Dallas Stars": {
-      "record": "8-5",
+      "record": "9-5",
       "match": "at WSH",
-      "detail": "LIVE · Period 3 · 00:07",
+      "detail": "FINAL · Nov 3, 6:00 PM CT",
       "score": "6 – 5",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs CBJ",
-        "detail": "FINAL · Oct 31, 7:00 PM CT",
-        "score": "3 – 1",
+        "match": "at WSH",
+        "detail": "FINAL · Nov 3, 6:00 PM CT",
+        "score": "6 – 5",
         "live": false,
-        "local_date": "2026-10-31"
+        "local_date": "2026-11-03"
       },
       "next": {
         "match": "at CBJ",
         "detail": "NEXT · Nov 5, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at WSH",
-        "detail": "LIVE · Period 3 · 00:07",
-        "score": "6 – 5",
-        "live": true
       }
     },
     "hockey/nhl/Colorado Avalanche": {
-      "record": "9-5",
+      "record": "9-6",
       "match": "at CBJ",
       "detail": "FINAL · Nov 3, 6:00 PM CT",
       "score": "2 – 7",
@@ -215,13 +190,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
       "live": false,
-      "last": {
-        "match": "vs Minnesota Vikings",
-        "detail": "FINAL · Nov 1, 12:00 PM CT",
-        "score": "19 – 15",
-        "live": false,
-        "local_date": "2026-11-01"
-      },
       "next": {
         "match": "at Miami Dolphins",
         "detail": "NEXT · Nov 8, 12:00 PM CT",
@@ -257,13 +225,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "live": false,
-      "last": {
-        "match": "at Denver Broncos",
-        "detail": "FINAL · Nov 1, 3:25 PM CT",
-        "score": "24 – 28",
-        "live": false,
-        "local_date": "2026-11-01"
-      },
       "next": {
         "match": "vs New York Jets",
         "detail": "NEXT · Nov 8, 12:00 PM CT",
@@ -278,13 +239,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
       "live": false,
-      "last": {
-        "match": "vs Baltimore Ravens",
-        "detail": "FINAL · Nov 1, 12:00 PM CT",
-        "score": "36 – 10",
-        "live": false,
-        "local_date": "2026-11-01"
-      },
       "next": {
         "match": "at Minnesota Vikings",
         "detail": "NEXT · Nov 9, 7:15 PM CT",
@@ -439,13 +393,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
       "live": false,
-      "last": {
-        "match": "at Ohio State Buckeyes",
-        "detail": "FINAL · Nov 1, 6:30 PM CT",
-        "score": "5 – 4",
-        "live": false,
-        "local_date": "2026-11-01"
-      },
       "next": {
         "match": "vs Boston University Terriers",
         "detail": "NEXT · Nov 6, 6:00 PM CT",
