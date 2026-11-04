@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-03T23:04:35.909591+00:00",
+  "updated_at": "2026-11-04T02:39:03.082835+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "10-3",
       "match": "at PHI",
-      "detail": "NEXT · Nov 3, 6:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 3, 6:00 PM CT",
+      "score": "4 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false,
       "last": {
-        "match": "at WSH",
-        "detail": "FINAL · Nov 1, 2:30 PM CT",
-        "score": "5 – 1",
+        "match": "at PHI",
+        "detail": "FINAL · Nov 3, 6:00 PM CT",
+        "score": "4 – 2",
         "live": false,
-        "local_date": "2026-11-01"
+        "local_date": "2026-11-03"
       },
       "next": {
-        "match": "at PHI",
-        "detail": "NEXT · Nov 3, 6:00 PM CT",
+        "match": "vs SJS",
+        "detail": "NEXT · Nov 6, 7:00 PM CT",
         "score": "",
         "live": false
       }
@@ -25,10 +25,10 @@
     "hockey/nhl/Washington Capitals": {
       "record": "8-5",
       "match": "vs DAL",
-      "detail": "NEXT · Nov 3, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 3 · 00:07",
+      "score": "5 – 6",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs MIN",
         "detail": "FINAL · Nov 1, 2:30 PM CT",
@@ -37,10 +37,16 @@
         "local_date": "2026-11-01"
       },
       "next": {
-        "match": "vs DAL",
-        "detail": "NEXT · Nov 3, 6:00 PM CT",
+        "match": "vs FLA",
+        "detail": "NEXT · Nov 7, 11:30 AM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs DAL",
+        "detail": "LIVE · Period 3 · 00:07",
+        "score": "5 – 6",
+        "live": true
       }
     },
     "football/nfl/Minnesota Vikings": {
@@ -95,10 +101,10 @@
     "hockey/nhl/Winnipeg Jets": {
       "record": "4-8",
       "match": "at MTL",
-      "detail": "NEXT · Nov 3, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 3 · 04:58",
+      "score": "0 – 4",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "at CAR",
         "detail": "FINAL · Nov 1, 12:00 PM CT",
@@ -107,10 +113,16 @@
         "local_date": "2026-11-01"
       },
       "next": {
-        "match": "at MTL",
-        "detail": "NEXT · Nov 3, 6:00 PM CT",
+        "match": "vs VAN",
+        "detail": "NEXT · Nov 5, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at MTL",
+        "detail": "LIVE · Period 3 · 04:58",
+        "score": "0 – 4",
+        "live": true
       }
     },
     "hockey/nhl/Chicago Blackhawks": {
@@ -137,10 +149,10 @@
     "hockey/nhl/Dallas Stars": {
       "record": "8-5",
       "match": "at WSH",
-      "detail": "NEXT · Nov 3, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 3 · 00:07",
+      "score": "6 – 5",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs CBJ",
         "detail": "FINAL · Oct 31, 7:00 PM CT",
@@ -149,29 +161,35 @@
         "local_date": "2026-10-31"
       },
       "next": {
-        "match": "at WSH",
-        "detail": "NEXT · Nov 3, 6:00 PM CT",
+        "match": "at CBJ",
+        "detail": "NEXT · Nov 5, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at WSH",
+        "detail": "LIVE · Period 3 · 00:07",
+        "score": "6 – 5",
+        "live": true
       }
     },
     "hockey/nhl/Colorado Avalanche": {
       "record": "9-5",
       "match": "at CBJ",
-      "detail": "NEXT · Nov 3, 6:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 3, 6:00 PM CT",
+      "score": "2 – 7",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
       "live": false,
       "last": {
-        "match": "at CHI",
-        "detail": "FINAL · Nov 2, 7:00 PM CT",
-        "score": "5 – 2",
+        "match": "at CBJ",
+        "detail": "FINAL · Nov 3, 6:00 PM CT",
+        "score": "2 – 7",
         "live": false,
-        "local_date": "2026-11-02"
+        "local_date": "2026-11-03"
       },
       "next": {
-        "match": "at CBJ",
-        "detail": "NEXT · Nov 3, 6:00 PM CT",
+        "match": "vs NSH",
+        "detail": "NEXT · Nov 5, 8:30 PM CT",
         "score": "",
         "live": false
       }
