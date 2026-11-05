@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T11:29:24.780524+00:00",
+  "updated_at": "2026-11-05T18:56:21.384482+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "11-3",
@@ -66,9 +66,9 @@
     },
     "basketball/nba/Minnesota Timberwolves": {
       "record": "6-3",
-      "match": "at Houston Rockets",
-      "detail": "FINAL · Nov 4, 7:30 PM CT",
-      "score": "117 – 107",
+      "match": "at New Orleans Pelicans",
+      "detail": "NEXT · Nov 6, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
@@ -108,9 +108,9 @@
     },
     "hockey/nhl/Chicago Blackhawks": {
       "record": "4-11",
-      "match": "at FLA",
-      "detail": "FINAL · Nov 4, 6:30 PM CT",
-      "score": "3 – 5",
+      "match": "at TBL",
+      "detail": "NEXT · Nov 5, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
       "live": false,
       "last": {
@@ -248,9 +248,9 @@
     },
     "basketball/nba/Boston Celtics": {
       "record": "6-2",
-      "match": "vs Milwaukee Bucks",
-      "detail": "FINAL · Nov 4, 6:30 PM CT",
-      "score": "109 – 102",
+      "match": "at Charlotte Hornets",
+      "detail": "NEXT · Nov 6, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
       "last": {
@@ -269,9 +269,9 @@
     },
     "soccer/eng.2/Wrexham AFC": {
       "record": "4-5-5",
-      "match": "vs Middlesbrough",
-      "detail": "FINAL · Nov 4, 1:45 PM CT",
-      "score": "2 – 0",
+      "match": "vs Wolverhampton Wanderers",
+      "detail": "NEXT · Nov 7, 6:30 AM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
       "live": false,
       "last": {
