@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T18:11:27.900910+00:00",
+  "updated_at": "2026-11-07T21:56:59.159724+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "12-3-3",
@@ -23,30 +23,24 @@
       }
     },
     "hockey/nhl/Washington Capitals": {
-      "record": "8-6-0",
+      "record": "9-6-0",
       "match": "vs FLA",
-      "detail": "LIVE · Period 1 · 04:55",
-      "score": "1 – 2",
+      "detail": "FINAL · Nov 7, 11:30 AM CT",
+      "score": "4 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs DAL",
-        "detail": "FINAL · Nov 3, 6:00 PM CT",
-        "score": "5 – 6",
+        "match": "vs FLA",
+        "detail": "FINAL · Nov 7, 11:30 AM CT",
+        "score": "4 – 3",
         "live": false,
-        "local_date": "2026-11-03"
+        "local_date": "2026-11-07"
       },
       "next": {
         "match": "at OTT",
         "detail": "NEXT · Nov 10, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs FLA",
-        "detail": "LIVE · Period 1 · 04:55",
-        "score": "1 – 2",
-        "live": true
       }
     },
     "football/nfl/Minnesota Vikings": {
@@ -438,10 +432,10 @@
     "hockey/mens-college-hockey/Michigan Wolverines": {
       "record": null,
       "match": "vs Boston University Terriers",
-      "detail": "NEXT · Nov 7, 3:30 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 7:24",
+      "score": "1 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs Boston University Terriers",
         "detail": "FINAL · Nov 6, 6:00 PM CT",
@@ -450,19 +444,25 @@
         "local_date": "2026-11-06"
       },
       "next": {
-        "match": "vs Boston University Terriers",
-        "detail": "NEXT · Nov 7, 3:30 PM CT",
+        "match": "at Notre Dame Fighting Irish",
+        "detail": "NEXT · Nov 12, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Boston University Terriers",
+        "detail": "LIVE · Period 1 · 7:24",
+        "score": "1 – 0",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/Boston University Terriers": {
       "record": null,
       "match": "at Michigan State Spartans",
-      "detail": "NEXT · Nov 7, 3:30 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 7:24",
+      "score": "0 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "at Michigan State Spartans",
         "detail": "FINAL · Nov 6, 6:00 PM CT",
@@ -471,10 +471,16 @@
         "local_date": "2026-11-06"
       },
       "next": {
-        "match": "at Michigan State Spartans",
-        "detail": "NEXT · Nov 7, 3:30 PM CT",
+        "match": "vs Harvard Crimson",
+        "detail": "NEXT · Nov 10, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Michigan State Spartans",
+        "detail": "LIVE · Period 1 · 7:24",
+        "score": "0 – 1",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/Boston College Eagles": {
