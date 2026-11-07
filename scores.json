@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T06:19:54.953462+00:00",
+  "updated_at": "2026-11-07T13:22:47.263641+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "12-3-3",
@@ -270,15 +270,15 @@
     "soccer/eng.2/Wrexham AFC": {
       "record": "4-5-5",
       "match": "vs Wolverhampton Wanderers",
-      "detail": "NEXT · Nov 7, 6:30 AM CT",
-      "score": "",
+      "detail": "LIVE · Half 1 · 45'+4'",
+      "score": "1 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
-      "live": false,
-      "next": {
+      "live": true,
+      "current": {
         "match": "vs Wolverhampton Wanderers",
-        "detail": "NEXT · Nov 7, 6:30 AM CT",
-        "score": "",
-        "live": false
+        "detail": "LIVE · Half 1 · 45'+4'",
+        "score": "1 – 1",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
