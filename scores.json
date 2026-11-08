@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T14:30:23.314042+00:00",
+  "updated_at": "2026-11-08T19:05:13.849621+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "12-3-4",
@@ -186,15 +186,21 @@
     "football/nfl/Detroit Lions": {
       "record": "5-2",
       "match": "at Miami Dolphins",
-      "detail": "NEXT · Nov 8, 12:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 3:24",
+      "score": "6 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "at Miami Dolphins",
-        "detail": "NEXT · Nov 8, 12:00 PM CT",
+        "match": "vs New England Patriots",
+        "detail": "NEXT · Nov 15, 8:30 AM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Miami Dolphins",
+        "detail": "LIVE · Quarter 2 · 3:24",
+        "score": "6 – 3",
+        "live": true
       }
     },
     "football/nfl/Chicago Bears": {
@@ -214,15 +220,21 @@
     "football/nfl/Kansas City Chiefs": {
       "record": "5-2",
       "match": "vs New York Jets",
-      "detail": "NEXT · Nov 8, 12:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 5:37",
+      "score": "14 – 9",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "vs New York Jets",
-        "detail": "NEXT · Nov 8, 12:00 PM CT",
+        "match": "at Atlanta Falcons",
+        "detail": "NEXT · Nov 15, 12:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs New York Jets",
+        "detail": "LIVE · Quarter 2 · 5:37",
+        "score": "14 – 9",
+        "live": true
       }
     },
     "football/nfl/Buffalo Bills": {
