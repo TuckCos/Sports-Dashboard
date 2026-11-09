@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T10:08:51.865871+00:00",
+  "updated_at": "2026-11-09T20:45:47.460553+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "12-3-4",
@@ -66,9 +66,9 @@
     },
     "basketball/nba/Minnesota Timberwolves": {
       "record": "8-3",
-      "match": "vs Utah Jazz",
-      "detail": "FINAL · Nov 8, 6:00 PM CT",
-      "score": "115 – 100",
+      "match": "vs Dallas Mavericks",
+      "detail": "NEXT · Nov 12, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
@@ -87,9 +87,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "7-8-3",
-      "match": "vs TBL",
-      "detail": "FINAL · Nov 8, 5:00 PM CT",
-      "score": "4 – 3",
+      "match": "vs NJD",
+      "detail": "NEXT · Nov 10, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false,
       "last": {
@@ -171,9 +171,9 @@
     },
     "football/nfl/Green Bay Packers": {
       "record": "6-3",
-      "match": "at New England Patriots",
-      "detail": "FINAL · Nov 8, 3:25 PM CT",
-      "score": "45 – 27",
+      "match": "vs Minnesota Vikings",
+      "detail": "NEXT · Nov 15, 12:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
       "live": false,
       "last": {
@@ -192,9 +192,9 @@
     },
     "football/nfl/Detroit Lions": {
       "record": "6-2",
-      "match": "at Miami Dolphins",
-      "detail": "FINAL · Nov 8, 12:00 PM CT",
-      "score": "19 – 9",
+      "match": "vs New England Patriots",
+      "detail": "NEXT · Nov 15, 8:30 AM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
       "live": false,
       "last": {
@@ -217,20 +217,20 @@
       "detail": "FINAL · Nov 8, 7:20 PM CT",
       "score": "27 – 24",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "live": false,
       "last": {
         "match": "vs Tampa Bay Buccaneers",
         "detail": "FINAL · Nov 8, 7:20 PM CT",
         "score": "27 – 24",
         "live": false,
         "local_date": "2026-11-08"
-      }
+      },
+      "live": false
     },
     "football/nfl/Kansas City Chiefs": {
       "record": "6-2",
-      "match": "vs New York Jets",
-      "detail": "FINAL · Nov 8, 12:00 PM CT",
-      "score": "35 – 12",
+      "match": "at Atlanta Falcons",
+      "detail": "NEXT · Nov 15, 12:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "live": false,
       "last": {
@@ -270,9 +270,9 @@
     },
     "basketball/nba/Boston Celtics": {
       "record": "8-2",
-      "match": "at Milwaukee Bucks",
-      "detail": "FINAL · Nov 8, 7:00 PM CT",
-      "score": "117 – 97",
+      "match": "at Philadelphia 76ers",
+      "detail": "NEXT · Nov 10, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
       "last": {
@@ -369,9 +369,9 @@
     },
     "hockey/mens-college-hockey/Denver Pioneers": {
       "record": null,
-      "match": "at Arizona State Sun Devils",
-      "detail": "FINAL · Nov 8, 1:00 PM CT",
-      "score": "1 – 0",
+      "match": "vs Lindenwood Lions",
+      "detail": "NEXT · Nov 13, 8:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
       "live": false,
       "last": {
