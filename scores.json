@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T02:24:01.772097+00:00",
+  "updated_at": "2026-11-09T10:08:51.865871+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "12-3-4",
@@ -65,30 +65,24 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
     },
     "basketball/nba/Minnesota Timberwolves": {
-      "record": "7-3",
+      "record": "8-3",
       "match": "vs Utah Jazz",
-      "detail": "LIVE · Inning 4 · 4:10",
-      "score": "101 – 90",
+      "detail": "FINAL · Nov 8, 6:00 PM CT",
+      "score": "115 – 100",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at New Orleans Pelicans",
-        "detail": "FINAL · Nov 6, 7:00 PM CT",
-        "score": "115 – 109",
+        "match": "vs Utah Jazz",
+        "detail": "FINAL · Nov 8, 6:00 PM CT",
+        "score": "115 – 100",
         "live": false,
-        "local_date": "2026-11-06"
+        "local_date": "2026-11-08"
       },
       "next": {
         "match": "vs Dallas Mavericks",
         "detail": "NEXT · Nov 12, 7:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs Utah Jazz",
-        "detail": "LIVE · Inning 4 · 4:10",
-        "score": "101 – 90",
-        "live": true
       }
     },
     "hockey/nhl/Winnipeg Jets": {
@@ -218,17 +212,18 @@
       }
     },
     "football/nfl/Chicago Bears": {
-      "record": "6-2",
+      "record": "7-2",
       "match": "vs Tampa Bay Buccaneers",
-      "detail": "LIVE · Quarter 2 · 5:35",
-      "score": "14 – 3",
+      "detail": "FINAL · Nov 8, 7:20 PM CT",
+      "score": "27 – 24",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "live": true,
-      "current": {
+      "live": false,
+      "last": {
         "match": "vs Tampa Bay Buccaneers",
-        "detail": "LIVE · Quarter 2 · 5:35",
-        "score": "14 – 3",
-        "live": true
+        "detail": "FINAL · Nov 8, 7:20 PM CT",
+        "score": "27 – 24",
+        "live": false,
+        "local_date": "2026-11-08"
       }
     },
     "football/nfl/Kansas City Chiefs": {
@@ -274,30 +269,24 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "7-2",
+      "record": "8-2",
       "match": "at Milwaukee Bucks",
-      "detail": "LIVE · Inning 3 · 10:19",
-      "score": "65 – 45",
+      "detail": "FINAL · Nov 8, 7:00 PM CT",
+      "score": "117 – 97",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at Charlotte Hornets",
-        "detail": "FINAL · Nov 6, 6:00 PM CT",
-        "score": "119 – 80",
+        "match": "at Milwaukee Bucks",
+        "detail": "FINAL · Nov 8, 7:00 PM CT",
+        "score": "117 – 97",
         "live": false,
-        "local_date": "2026-11-06"
+        "local_date": "2026-11-08"
       },
       "next": {
         "match": "at Philadelphia 76ers",
         "detail": "NEXT · Nov 10, 7:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Milwaukee Bucks",
-        "detail": "LIVE · Inning 3 · 10:19",
-        "score": "65 – 45",
-        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
@@ -511,13 +500,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
       "live": false,
-      "last": {
-        "match": "vs Vermont Catamounts",
-        "detail": "FINAL · Nov 6, 6:00 PM CT",
-        "score": "4 – 4",
-        "live": false,
-        "local_date": "2026-11-06"
-      },
       "next": {
         "match": "at Massachusetts Minutemen",
         "detail": "NEXT · Nov 13, 6:00 PM CT",
