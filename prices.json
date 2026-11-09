@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T22:46:26.386444+00:00",
+  "updated_at": "2026-11-09T02:01:35.742055+00:00",
   "cash_bid_date": "2026-11-06",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
@@ -16,25 +16,25 @@
       }
     },
     "soybeans": {
-      "price": 10.99,
+      "price": 11.05,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-06",
       "futures": {
-        "price": 11.9375,
+        "price": 12.0,
         "contract": "Jan 27 Soybeans",
         "unit": "bu"
       }
     },
     "corn": {
-      "price": 3.51,
+      "price": 3.53,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-06",
       "futures": {
-        "price": 4.415,
+        "price": 4.4275,
         "contract": "Dec 26 Corn",
         "unit": "bu"
       }
@@ -52,35 +52,35 @@
       "price": 730.0,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-08",
+      "price_date": "2026-11-09",
       "region": "National Average"
     },
     "map": {
       "price": 1100.52,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-08",
+      "price_date": "2026-11-09",
       "region": "National Average"
     },
     "potash": {
       "price": 535.2,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-08",
+      "price_date": "2026-11-09",
       "region": "National Average"
     },
     "ams": {
       "price": 593.69,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-08",
+      "price_date": "2026-11-09",
       "region": "National Average"
     },
     "anhydrous": {
       "price": 881.42,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-08",
+      "price_date": "2026-11-09",
       "region": "National Average"
     }
   }
