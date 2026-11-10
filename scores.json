@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T20:45:47.460553+00:00",
+  "updated_at": "2026-11-10T02:59:10.379095+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "12-3-4",
@@ -46,15 +46,21 @@
     "football/nfl/Minnesota Vikings": {
       "record": "6-1",
       "match": "vs Buffalo Bills",
-      "detail": "NEXT · Nov 9, 7:15 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 0:00",
+      "score": "6 – 10",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "vs Buffalo Bills",
-        "detail": "NEXT · Nov 9, 7:15 PM CT",
+        "match": "at Green Bay Packers",
+        "detail": "NEXT · Nov 15, 12:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Buffalo Bills",
+        "detail": "LIVE · Quarter 2 · 0:00",
+        "score": "6 – 10",
+        "live": true
       }
     },
     "baseball/mlb/Minnesota Twins": {
@@ -250,15 +256,21 @@
     "football/nfl/Buffalo Bills": {
       "record": "6-1",
       "match": "at Minnesota Vikings",
-      "detail": "NEXT · Nov 9, 7:15 PM CT",
-      "score": "",
+      "detail": "LIVE · Quarter 2 · 0:00",
+      "score": "10 – 6",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "at Minnesota Vikings",
-        "detail": "NEXT · Nov 9, 7:15 PM CT",
+        "match": "at New York Jets",
+        "detail": "NEXT · Nov 15, 12:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Minnesota Vikings",
+        "detail": "LIVE · Quarter 2 · 0:00",
+        "score": "10 – 6",
+        "live": true
       }
     },
     "baseball/mlb/New York Yankees": {
