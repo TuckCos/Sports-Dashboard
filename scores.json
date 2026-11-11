@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T03:10:19.941820+00:00",
+  "updated_at": "2026-11-11T11:05:12.619751+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "13-3-4",
@@ -78,13 +78,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
-      "last": {
-        "match": "vs Utah Jazz",
-        "detail": "FINAL · Nov 8, 6:00 PM CT",
-        "score": "115 – 100",
-        "live": false,
-        "local_date": "2026-11-08"
-      },
       "next": {
         "match": "vs Dallas Mavericks",
         "detail": "NEXT · Nov 12, 7:00 PM CT",
@@ -183,13 +176,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
       "live": false,
-      "last": {
-        "match": "at New England Patriots",
-        "detail": "FINAL · Nov 8, 3:25 PM CT",
-        "score": "45 – 27",
-        "live": false,
-        "local_date": "2026-11-08"
-      },
       "next": {
         "match": "vs Minnesota Vikings",
         "detail": "NEXT · Nov 15, 12:00 PM CT",
@@ -204,13 +190,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
       "live": false,
-      "last": {
-        "match": "at Miami Dolphins",
-        "detail": "FINAL · Nov 8, 12:00 PM CT",
-        "score": "19 – 9",
-        "live": false,
-        "local_date": "2026-11-08"
-      },
       "next": {
         "match": "vs New England Patriots",
         "detail": "NEXT · Nov 15, 8:30 AM CT",
@@ -240,13 +219,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "live": false,
-      "last": {
-        "match": "vs New York Jets",
-        "detail": "FINAL · Nov 8, 12:00 PM CT",
-        "score": "35 – 12",
-        "live": false,
-        "local_date": "2026-11-08"
-      },
       "next": {
         "match": "at Atlanta Falcons",
         "detail": "NEXT · Nov 15, 12:00 PM CT",
@@ -283,30 +255,24 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "8-2",
+      "record": "9-2",
       "match": "at Philadelphia 76ers",
-      "detail": "LIVE · Inning 4 · 7:47",
-      "score": "105 – 82",
+      "detail": "FINAL · Nov 10, 7:00 PM CT",
+      "score": "123 – 101",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at Milwaukee Bucks",
-        "detail": "FINAL · Nov 8, 7:00 PM CT",
-        "score": "117 – 97",
+        "match": "at Philadelphia 76ers",
+        "detail": "FINAL · Nov 10, 7:00 PM CT",
+        "score": "123 – 101",
         "live": false,
-        "local_date": "2026-11-08"
+        "local_date": "2026-11-10"
       },
       "next": {
         "match": "at Toronto Raptors",
         "detail": "NEXT · Nov 11, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Philadelphia 76ers",
-        "detail": "LIVE · Inning 4 · 7:47",
-        "score": "105 – 82",
-        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
@@ -373,13 +339,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
       "live": false,
-      "last": {
-        "match": "at Arizona State Sun Devils",
-        "detail": "FINAL · Nov 8, 1:00 PM CT",
-        "score": "1 – 0",
-        "live": false,
-        "local_date": "2026-11-08"
-      },
       "next": {
         "match": "vs Lindenwood Lions",
         "detail": "NEXT · Nov 13, 8:00 PM CT",
