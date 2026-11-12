@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T01:02:33.540494+00:00",
+  "updated_at": "2026-11-12T08:14:43.625989+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "13-3-4",
@@ -50,13 +50,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
       "live": false,
-      "last": {
-        "match": "vs Buffalo Bills",
-        "detail": "FINAL · Nov 9, 7:15 PM CT",
-        "score": "6 – 23",
-        "live": false,
-        "local_date": "2026-11-09"
-      },
       "next": {
         "match": "at Green Bay Packers",
         "detail": "NEXT · Nov 15, 12:00 PM CT",
@@ -233,13 +226,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
       "live": false,
-      "last": {
-        "match": "at Minnesota Vikings",
-        "detail": "FINAL · Nov 9, 7:15 PM CT",
-        "score": "23 – 6",
-        "live": false,
-        "local_date": "2026-11-09"
-      },
       "next": {
         "match": "at New York Jets",
         "detail": "NEXT · Nov 15, 12:00 PM CT",
@@ -255,30 +241,24 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "9-2",
+      "record": "10-2",
       "match": "at Toronto Raptors",
-      "detail": "LIVE · Inning 2 · 6:06",
-      "score": "35 – 54",
+      "detail": "FINAL · Nov 11, 6:00 PM CT",
+      "score": "98 – 93",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at Philadelphia 76ers",
-        "detail": "FINAL · Nov 10, 7:00 PM CT",
-        "score": "123 – 101",
+        "match": "at Toronto Raptors",
+        "detail": "FINAL · Nov 11, 6:00 PM CT",
+        "score": "98 – 93",
         "live": false,
-        "local_date": "2026-11-10"
+        "local_date": "2026-11-11"
       },
       "next": {
         "match": "vs Dallas Mavericks",
         "detail": "NEXT · Nov 15, 5:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Toronto Raptors",
-        "detail": "LIVE · Inning 2 · 6:06",
-        "score": "35 – 54",
-        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
