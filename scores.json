@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T08:14:43.625989+00:00",
+  "updated_at": "2026-11-12T16:54:05.626720+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "13-3-4",
@@ -242,9 +242,9 @@
     },
     "basketball/nba/Boston Celtics": {
       "record": "10-2",
-      "match": "at Toronto Raptors",
-      "detail": "FINAL · Nov 11, 6:00 PM CT",
-      "score": "98 – 93",
+      "match": "vs Dallas Mavericks",
+      "detail": "NEXT · Nov 15, 5:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
       "last": {
