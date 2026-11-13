@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-13T10:48:56.574540+00:00",
+  "updated_at": "2026-11-13T18:17:45.752443+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "14-3-4",
-      "match": "at TOR",
-      "detail": "FINAL · Nov 12, 6:00 PM CT",
-      "score": "5 – 2",
+      "match": "at BOS",
+      "detail": "NEXT · Nov 14, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false,
       "last": {
@@ -24,9 +24,9 @@
     },
     "hockey/nhl/Washington Capitals": {
       "record": "10-7-0",
-      "match": "at NJD",
-      "detail": "FINAL · Nov 12, 6:00 PM CT",
-      "score": "2 – 5",
+      "match": "vs NJD",
+      "detail": "NEXT · Nov 14, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
       "live": false,
       "last": {
@@ -66,9 +66,9 @@
     },
     "basketball/nba/Minnesota Timberwolves": {
       "record": "9-3",
-      "match": "vs Dallas Mavericks",
-      "detail": "FINAL · Nov 12, 7:00 PM CT",
-      "score": "133 – 94",
+      "match": "vs Chicago Bulls",
+      "detail": "NEXT · Nov 14, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
@@ -87,9 +87,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "9-8-3",
-      "match": "at DAL",
-      "detail": "FINAL · Nov 12, 7:00 PM CT",
-      "score": "8 – 3",
+      "match": "at CHI",
+      "detail": "NEXT · Nov 14, 2:30 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false,
       "last": {
@@ -108,9 +108,9 @@
     },
     "hockey/nhl/Chicago Blackhawks": {
       "record": "5-13-1",
-      "match": "vs BUF",
-      "detail": "FINAL · Nov 12, 7:00 PM CT",
-      "score": "3 – 2",
+      "match": "vs WPG",
+      "detail": "NEXT · Nov 14, 2:30 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
       "live": false,
       "last": {
@@ -129,9 +129,9 @@
     },
     "hockey/nhl/Dallas Stars": {
       "record": "10-6-2",
-      "match": "vs WPG",
-      "detail": "FINAL · Nov 12, 7:00 PM CT",
-      "score": "3 – 8",
+      "match": "vs BUF",
+      "detail": "NEXT · Nov 14, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false,
       "last": {
@@ -150,9 +150,9 @@
     },
     "hockey/nhl/Colorado Avalanche": {
       "record": "11-6-3",
-      "match": "at OTT",
-      "detail": "FINAL · Nov 12, 6:00 PM CT",
-      "score": "3 – 4",
+      "match": "at MTL",
+      "detail": "NEXT · Nov 14, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
       "live": false,
       "last": {
@@ -383,8 +383,8 @@
     "hockey/mens-college-hockey/Michigan Wolverines": {
       "record": null,
       "match": "at Notre Dame Fighting Irish",
-      "detail": "FINAL · Nov 12, 6:00 PM CT",
-      "score": "2 – 3",
+      "detail": "NEXT · Nov 13, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
       "live": false,
       "last": {
