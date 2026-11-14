@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T03:37:48.215993+00:00",
+  "updated_at": "2026-11-14T10:57:49.447565+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "14-3-4",
@@ -199,18 +199,17 @@
     },
     "football/nfl/Chicago Bears": {
       "record": "7-2",
-      "match": "vs Tampa Bay Buccaneers",
-      "detail": "FINAL · Nov 8, 7:20 PM CT",
-      "score": "27 – 24",
+      "match": "vs New Orleans Saints",
+      "detail": "NEXT · Nov 22, 12:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "last": {
-        "match": "vs Tampa Bay Buccaneers",
-        "detail": "FINAL · Nov 8, 7:20 PM CT",
-        "score": "27 – 24",
-        "live": false,
-        "local_date": "2026-11-08"
-      },
-      "live": false
+      "live": false,
+      "next": {
+        "match": "vs New Orleans Saints",
+        "detail": "NEXT · Nov 22, 12:00 PM CT",
+        "score": "",
+        "live": false
+      }
     },
     "football/nfl/Kansas City Chiefs": {
       "record": "6-2",
@@ -254,13 +253,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
-      "last": {
-        "match": "at Toronto Raptors",
-        "detail": "FINAL · Nov 11, 6:00 PM CT",
-        "score": "98 – 93",
-        "live": false,
-        "local_date": "2026-11-11"
-      },
       "next": {
         "match": "vs Dallas Mavericks",
         "detail": "NEXT · Nov 15, 5:00 PM CT",
@@ -348,21 +340,22 @@
     "hockey/mens-college-hockey/Denver Pioneers": {
       "record": null,
       "match": "vs Lindenwood Lions",
-      "detail": "LIVE · Period 2 · 2:49",
-      "score": "3 – 2",
+      "detail": "FINAL · Nov 13, 8:00 PM CT",
+      "score": "6 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "vs Lindenwood Lions",
+        "detail": "FINAL · Nov 13, 8:00 PM CT",
+        "score": "6 – 3",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "vs Lindenwood Lions",
         "detail": "NEXT · Nov 14, 7:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs Lindenwood Lions",
-        "detail": "LIVE · Period 2 · 2:49",
-        "score": "3 – 2",
-        "live": true
       }
     },
     "hockey/mens-college-hockey/Minnesota Duluth Bulldogs": {
