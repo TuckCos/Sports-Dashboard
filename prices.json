@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T14:56:19.743725+00:00",
+  "updated_at": "2026-11-14T19:37:12.117863+00:00",
   "cash_bid_date": "2026-11-13",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
@@ -16,25 +16,25 @@
       }
     },
     "soybeans": {
-      "price": 11.43,
+      "price": 11.41,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-13",
       "futures": {
-        "price": 12.3275,
+        "price": 12.315,
         "contract": "Jan 27 Soybeans",
         "unit": "bu"
       }
     },
     "corn": {
-      "price": 3.56,
+      "price": 3.55,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-13",
       "futures": {
-        "price": 4.46,
+        "price": 4.455,
         "contract": "Dec 26 Corn",
         "unit": "bu"
       }
