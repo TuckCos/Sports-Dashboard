@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T23:43:46.816677+00:00",
+  "updated_at": "2026-11-14T03:37:48.215993+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "14-3-4",
@@ -283,29 +283,43 @@
       }
     },
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
-      "record": "5-3-1",
+      "record": "6-3-1",
       "match": "at St. Thomas Tommies",
-      "detail": "NEXT · Nov 13, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 7:00 PM CT",
+      "score": "2 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
       "live": false,
+      "last": {
+        "match": "at St. Thomas Tommies",
+        "detail": "FINAL · Nov 13, 7:00 PM CT",
+        "score": "2 – 0",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "at St. Thomas Tommies",
-        "detail": "NEXT · Nov 13, 7:00 PM CT",
+        "detail": "NEXT · Nov 14, 7:00 PM CT",
         "score": "",
         "live": false
       }
     },
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
-      "record": "7-0-3",
+      "record": "8-0-3",
       "match": "vs Ferris State Bulldogs",
-      "detail": "NEXT · Nov 13, 7:07 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 7:07 PM CT",
+      "score": "3 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2043.png",
       "live": false,
+      "last": {
+        "match": "vs Ferris State Bulldogs",
+        "detail": "FINAL · Nov 13, 7:07 PM CT",
+        "score": "3 – 2",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "vs Ferris State Bulldogs",
-        "detail": "NEXT · Nov 13, 7:07 PM CT",
+        "detail": "NEXT · Nov 14, 6:07 PM CT",
         "score": "",
         "live": false
       }
@@ -313,13 +327,20 @@
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
       "record": null,
       "match": "vs Alaska Anchorage Seawolves",
-      "detail": "NEXT · Nov 13, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 7:00 PM CT",
+      "score": "7 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2802.png",
       "live": false,
+      "last": {
+        "match": "vs Alaska Anchorage Seawolves",
+        "detail": "FINAL · Nov 13, 7:00 PM CT",
+        "score": "7 – 3",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "vs Alaska Anchorage Seawolves",
-        "detail": "NEXT · Nov 13, 7:00 PM CT",
+        "detail": "NEXT · Nov 14, 6:00 PM CT",
         "score": "",
         "live": false
       }
@@ -327,27 +348,40 @@
     "hockey/mens-college-hockey/Denver Pioneers": {
       "record": null,
       "match": "vs Lindenwood Lions",
-      "detail": "NEXT · Nov 13, 8:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 2 · 2:49",
+      "score": "3 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
-      "live": false,
+      "live": true,
       "next": {
         "match": "vs Lindenwood Lions",
-        "detail": "NEXT · Nov 13, 8:00 PM CT",
+        "detail": "NEXT · Nov 14, 7:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Lindenwood Lions",
+        "detail": "LIVE · Period 2 · 2:49",
+        "score": "3 – 2",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/Minnesota Duluth Bulldogs": {
       "record": null,
       "match": "at St. Cloud State Huskies",
-      "detail": "NEXT · Nov 13, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 7:00 PM CT",
+      "score": "4 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/134.png",
       "live": false,
+      "last": {
+        "match": "at St. Cloud State Huskies",
+        "detail": "FINAL · Nov 13, 7:00 PM CT",
+        "score": "4 – 0",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "at St. Cloud State Huskies",
-        "detail": "NEXT · Nov 13, 7:00 PM CT",
+        "detail": "NEXT · Nov 14, 6:00 PM CT",
         "score": "",
         "live": false
       }
@@ -355,13 +389,20 @@
     "hockey/mens-college-hockey/St. Cloud State Huskies": {
       "record": null,
       "match": "vs Minnesota Duluth Bulldogs",
-      "detail": "NEXT · Nov 13, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 7:00 PM CT",
+      "score": "0 – 4",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2594.png",
       "live": false,
+      "last": {
+        "match": "vs Minnesota Duluth Bulldogs",
+        "detail": "FINAL · Nov 13, 7:00 PM CT",
+        "score": "0 – 4",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "vs Minnesota Duluth Bulldogs",
-        "detail": "NEXT · Nov 13, 7:00 PM CT",
+        "detail": "NEXT · Nov 14, 6:00 PM CT",
         "score": "",
         "live": false
       }
@@ -369,13 +410,20 @@
     "hockey/mens-college-hockey/Wisconsin Badgers": {
       "record": null,
       "match": "vs Ohio State Buckeyes",
-      "detail": "NEXT · Nov 13, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 7:00 PM CT",
+      "score": "5 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
       "live": false,
+      "last": {
+        "match": "vs Ohio State Buckeyes",
+        "detail": "FINAL · Nov 13, 7:00 PM CT",
+        "score": "5 – 2",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "vs Ohio State Buckeyes",
-        "detail": "NEXT · Nov 13, 7:00 PM CT",
+        "detail": "NEXT · Nov 14, 6:00 PM CT",
         "score": "",
         "live": false
       }
@@ -383,20 +431,20 @@
     "hockey/mens-college-hockey/Michigan Wolverines": {
       "record": null,
       "match": "at Notre Dame Fighting Irish",
-      "detail": "NEXT · Nov 13, 6:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 6:00 PM CT",
+      "score": "1 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
       "live": false,
       "last": {
         "match": "at Notre Dame Fighting Irish",
-        "detail": "FINAL · Nov 12, 6:00 PM CT",
-        "score": "2 – 3",
+        "detail": "FINAL · Nov 13, 6:00 PM CT",
+        "score": "1 – 1",
         "live": false,
-        "local_date": "2026-11-12"
+        "local_date": "2026-11-13"
       },
       "next": {
-        "match": "at Notre Dame Fighting Irish",
-        "detail": "NEXT · Nov 13, 6:00 PM CT",
+        "match": "vs Penn State Nittany Lions",
+        "detail": "NEXT · Nov 14, 6:00 PM CT",
         "score": "",
         "live": false
       }
@@ -418,13 +466,20 @@
     "hockey/mens-college-hockey/Boston College Eagles": {
       "record": null,
       "match": "at Massachusetts Minutemen",
-      "detail": "NEXT · Nov 13, 6:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 6:00 PM CT",
+      "score": "3 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
       "live": false,
-      "next": {
+      "last": {
         "match": "at Massachusetts Minutemen",
-        "detail": "NEXT · Nov 13, 6:00 PM CT",
+        "detail": "FINAL · Nov 13, 6:00 PM CT",
+        "score": "3 – 1",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
+      "next": {
+        "match": "vs Massachusetts Minutemen",
+        "detail": "NEXT · Nov 14, 6:00 PM CT",
         "score": "",
         "live": false
       }
@@ -432,13 +487,20 @@
     "hockey/mens-college-hockey/Bemidji State Beavers": {
       "record": null,
       "match": "vs Minnesota State Mavericks",
-      "detail": "NEXT · Nov 13, 7:07 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 13, 7:07 PM CT",
+      "score": "1 – 4",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/132.png",
       "live": false,
+      "last": {
+        "match": "vs Minnesota State Mavericks",
+        "detail": "FINAL · Nov 13, 7:07 PM CT",
+        "score": "1 – 4",
+        "live": false,
+        "local_date": "2026-11-13"
+      },
       "next": {
         "match": "vs Minnesota State Mavericks",
-        "detail": "NEXT · Nov 13, 7:07 PM CT",
+        "detail": "NEXT · Nov 14, 6:07 PM CT",
         "score": "",
         "live": false
       }
