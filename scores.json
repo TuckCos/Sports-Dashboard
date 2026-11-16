@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T00:20:47.318783+00:00",
+  "updated_at": "2026-11-16T07:00:30.461833+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "15-3-4",
@@ -135,22 +135,22 @@
       }
     },
     "hockey/nhl/Dallas Stars": {
-      "record": "11-6-2",
+      "record": "12-6-2",
       "match": "vs FLA",
-      "detail": "NEXT · Nov 15, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 15, 7:00 PM CT",
+      "score": "2 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false,
       "last": {
-        "match": "vs BUF",
-        "detail": "FINAL · Nov 14, 7:00 PM CT",
-        "score": "2 – 0",
+        "match": "vs FLA",
+        "detail": "FINAL · Nov 15, 7:00 PM CT",
+        "score": "2 – 1",
         "live": false,
-        "local_date": "2026-11-14"
+        "local_date": "2026-11-15"
       },
       "next": {
-        "match": "vs FLA",
-        "detail": "NEXT · Nov 15, 7:00 PM CT",
+        "match": "at VGK",
+        "detail": "NEXT · Nov 17, 9:00 PM CT",
         "score": "",
         "live": false
       }
@@ -276,23 +276,24 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "10-2",
+      "record": "11-2",
       "match": "vs Dallas Mavericks",
-      "detail": "LIVE · Inning 3 · 8:47",
-      "score": "78 – 49",
+      "detail": "FINAL · Nov 15, 5:00 PM CT",
+      "score": "131 – 94",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "vs Dallas Mavericks",
+        "detail": "FINAL · Nov 15, 5:00 PM CT",
+        "score": "131 – 94",
+        "live": false,
+        "local_date": "2026-11-15"
+      },
       "next": {
         "match": "vs Orlando Magic",
         "detail": "NEXT · Nov 16, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs Dallas Mavericks",
-        "detail": "LIVE · Inning 3 · 8:47",
-        "score": "78 – 49",
-        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
