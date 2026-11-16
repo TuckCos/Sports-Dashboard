@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T20:32:28.773015+00:00",
+  "updated_at": "2026-11-16T00:20:47.318783+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "15-3-4",
@@ -44,23 +44,24 @@
       }
     },
     "football/nfl/Minnesota Vikings": {
-      "record": "6-2",
+      "record": "7-2",
       "match": "at Green Bay Packers",
-      "detail": "LIVE · Quarter 4 · 9:15",
-      "score": "20 – 10",
+      "detail": "FINAL · Nov 15, 12:00 PM CT",
+      "score": "30 – 10",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "at Green Bay Packers",
+        "detail": "FINAL · Nov 15, 12:00 PM CT",
+        "score": "30 – 10",
+        "live": false,
+        "local_date": "2026-11-15"
+      },
       "next": {
         "match": "at San Francisco 49ers",
         "detail": "NEXT · Nov 22, 7:20 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Green Bay Packers",
-        "detail": "LIVE · Quarter 4 · 9:15",
-        "score": "20 – 10",
-        "live": true
       }
     },
     "baseball/mlb/Minnesota Twins": {
@@ -176,17 +177,18 @@
       }
     },
     "football/nfl/Green Bay Packers": {
-      "record": "6-3",
+      "record": "6-4",
       "match": "vs Minnesota Vikings",
-      "detail": "LIVE · Quarter 4 · 9:15",
-      "score": "10 – 20",
+      "detail": "FINAL · Nov 15, 12:00 PM CT",
+      "score": "10 – 30",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
-      "live": true,
-      "current": {
+      "live": false,
+      "last": {
         "match": "vs Minnesota Vikings",
-        "detail": "LIVE · Quarter 4 · 9:15",
-        "score": "10 – 20",
-        "live": true
+        "detail": "FINAL · Nov 15, 12:00 PM CT",
+        "score": "10 – 30",
+        "live": false,
+        "local_date": "2026-11-15"
       }
     },
     "football/nfl/Detroit Lions": {
@@ -225,43 +227,45 @@
       }
     },
     "football/nfl/Kansas City Chiefs": {
-      "record": "6-2",
+      "record": "7-2",
       "match": "at Atlanta Falcons",
-      "detail": "LIVE · Quarter 4 · 9:55",
-      "score": "28 – 3",
+      "detail": "FINAL · Nov 15, 12:00 PM CT",
+      "score": "35 – 13",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "at Atlanta Falcons",
+        "detail": "FINAL · Nov 15, 12:00 PM CT",
+        "score": "35 – 13",
+        "live": false,
+        "local_date": "2026-11-15"
+      },
       "next": {
         "match": "vs Arizona Cardinals",
         "detail": "NEXT · Nov 22, 12:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Atlanta Falcons",
-        "detail": "LIVE · Quarter 4 · 9:55",
-        "score": "28 – 3",
-        "live": true
       }
     },
     "football/nfl/Buffalo Bills": {
-      "record": "7-1",
+      "record": "8-1",
       "match": "at New York Jets",
-      "detail": "LIVE · Quarter 4 · 13:10",
-      "score": "24 – 12",
+      "detail": "FINAL · Nov 15, 12:00 PM CT",
+      "score": "31 – 12",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "at New York Jets",
+        "detail": "FINAL · Nov 15, 12:00 PM CT",
+        "score": "31 – 12",
+        "live": false,
+        "local_date": "2026-11-15"
+      },
       "next": {
         "match": "vs Miami Dolphins",
         "detail": "NEXT · Nov 22, 12:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at New York Jets",
-        "detail": "LIVE · Quarter 4 · 13:10",
-        "score": "24 – 12",
-        "live": true
       }
     },
     "baseball/mlb/New York Yankees": {
@@ -274,15 +278,21 @@
     "basketball/nba/Boston Celtics": {
       "record": "10-2",
       "match": "vs Dallas Mavericks",
-      "detail": "NEXT · Nov 15, 5:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Inning 3 · 8:47",
+      "score": "78 – 49",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "vs Dallas Mavericks",
-        "detail": "NEXT · Nov 15, 5:00 PM CT",
+        "match": "vs Orlando Magic",
+        "detail": "NEXT · Nov 16, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Dallas Mavericks",
+        "detail": "LIVE · Inning 3 · 8:47",
+        "score": "78 – 49",
+        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
