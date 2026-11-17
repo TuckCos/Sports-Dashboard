@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T08:34:03.739099+00:00",
+  "updated_at": "2026-11-17T17:52:53.674275+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "15-3-4",
@@ -74,8 +74,8 @@
     "basketball/nba/Minnesota Timberwolves": {
       "record": "10-4",
       "match": "vs Portland Trail Blazers",
-      "detail": "FINAL · Nov 16, 7:00 PM CT",
-      "score": "106 – 98",
+      "detail": "NEXT · Nov 17, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
@@ -283,9 +283,9 @@
     },
     "basketball/nba/Boston Celtics": {
       "record": "11-3",
-      "match": "vs Orlando Magic",
-      "detail": "FINAL · Nov 16, 6:00 PM CT",
-      "score": "105 – 115",
+      "match": "at Denver Nuggets",
+      "detail": "NEXT · Nov 18, 8:30 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
       "last": {
