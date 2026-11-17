@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:44:09.140199+00:00",
+  "updated_at": "2026-11-17T08:34:03.739099+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "15-3-4",
@@ -72,22 +72,22 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
     },
     "basketball/nba/Minnesota Timberwolves": {
-      "record": "9-4",
+      "record": "10-4",
       "match": "vs Portland Trail Blazers",
-      "detail": "NEXT · Nov 16, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 16, 7:00 PM CT",
+      "score": "106 – 98",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
-        "match": "vs Chicago Bulls",
-        "detail": "FINAL · Nov 14, 7:00 PM CT",
-        "score": "106 – 117",
+        "match": "vs Portland Trail Blazers",
+        "detail": "FINAL · Nov 16, 7:00 PM CT",
+        "score": "106 – 98",
         "live": false,
-        "local_date": "2026-11-14"
+        "local_date": "2026-11-16"
       },
       "next": {
         "match": "vs Portland Trail Blazers",
-        "detail": "NEXT · Nov 16, 7:00 PM CT",
+        "detail": "NEXT · Nov 17, 7:00 PM CT",
         "score": "",
         "live": false
       }
@@ -178,10 +178,11 @@
     },
     "football/nfl/Green Bay Packers": {
       "record": "6-4",
-      "match": "vs Minnesota Vikings",
-      "detail": "FINAL · Nov 15, 12:00 PM CT",
-      "score": "10 – 30",
+      "match": "at Los Angeles Rams",
+      "detail": "NEXT · Nov 25, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+      "live": false,
       "last": {
         "match": "vs Minnesota Vikings",
         "detail": "FINAL · Nov 15, 12:00 PM CT",
@@ -189,7 +190,12 @@
         "live": false,
         "local_date": "2026-11-15"
       },
-      "live": false
+      "next": {
+        "match": "at Los Angeles Rams",
+        "detail": "NEXT · Nov 25, 7:00 PM CT",
+        "score": "",
+        "live": false
+      }
     },
     "football/nfl/Detroit Lions": {
       "record": "7-2",
@@ -276,30 +282,24 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png"
     },
     "basketball/nba/Boston Celtics": {
-      "record": "11-2",
+      "record": "11-3",
       "match": "vs Orlando Magic",
-      "detail": "LIVE · Inning 2 · 9:00",
-      "score": "25 – 28",
+      "detail": "FINAL · Nov 16, 6:00 PM CT",
+      "score": "105 – 115",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs Dallas Mavericks",
-        "detail": "FINAL · Nov 15, 5:00 PM CT",
-        "score": "131 – 94",
+        "match": "vs Orlando Magic",
+        "detail": "FINAL · Nov 16, 6:00 PM CT",
+        "score": "105 – 115",
         "live": false,
-        "local_date": "2026-11-15"
+        "local_date": "2026-11-16"
       },
       "next": {
         "match": "at Denver Nuggets",
         "detail": "NEXT · Nov 18, 8:30 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs Orlando Magic",
-        "detail": "LIVE · Inning 2 · 9:00",
-        "score": "25 – 28",
-        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
@@ -323,13 +323,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
       "live": false,
-      "last": {
-        "match": "at St. Thomas Tommies",
-        "detail": "FINAL · Nov 14, 7:00 PM CT",
-        "score": "6 – 2",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "vs St. Cloud State Huskies",
         "detail": "NEXT · Nov 20, 7:07 PM CT",
@@ -344,13 +337,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2043.png",
       "live": false,
-      "last": {
-        "match": "vs Ferris State Bulldogs",
-        "detail": "FINAL · Nov 14, 6:07 PM CT",
-        "score": "4 – 1",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "at Bowling Green Falcons",
         "detail": "NEXT · Nov 20, 6:07 PM CT",
@@ -380,13 +366,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
       "live": false,
-      "last": {
-        "match": "vs Lindenwood Lions",
-        "detail": "FINAL · Nov 14, 7:00 PM CT",
-        "score": "7 – 1",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "vs St. Thomas Tommies",
         "detail": "NEXT · Nov 20, 8:00 PM CT",
@@ -401,13 +380,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/134.png",
       "live": false,
-      "last": {
-        "match": "at St. Cloud State Huskies",
-        "detail": "FINAL · Nov 14, 6:00 PM CT",
-        "score": "4 – 0",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "vs Arizona State Sun Devils",
         "detail": "NEXT · Nov 20, 7:07 PM CT",
@@ -422,13 +394,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2594.png",
       "live": false,
-      "last": {
-        "match": "vs Minnesota Duluth Bulldogs",
-        "detail": "FINAL · Nov 14, 6:00 PM CT",
-        "score": "0 – 4",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "at North Dakota Fighting Hawks",
         "detail": "NEXT · Nov 20, 7:07 PM CT",
@@ -443,13 +408,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
       "live": false,
-      "last": {
-        "match": "vs Ohio State Buckeyes",
-        "detail": "FINAL · Nov 14, 6:00 PM CT",
-        "score": "1 – 2",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "vs Penn State Nittany Lions",
         "detail": "NEXT · Nov 20, 7:00 PM CT",
@@ -464,13 +422,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
       "live": false,
-      "last": {
-        "match": "vs Penn State Nittany Lions",
-        "detail": "FINAL · Nov 14, 6:00 PM CT",
-        "score": "8 – 3",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "vs Michigan State Spartans",
         "detail": "NEXT · Nov 20, 6:00 PM CT",
@@ -499,13 +450,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
       "live": false,
-      "last": {
-        "match": "vs Massachusetts Minutemen",
-        "detail": "FINAL · Nov 14, 6:00 PM CT",
-        "score": "4 – 2",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "at Maine Black Bears",
         "detail": "NEXT · Nov 20, 6:00 PM CT",
@@ -520,13 +464,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/132.png",
       "live": false,
-      "last": {
-        "match": "vs Minnesota State Mavericks",
-        "detail": "FINAL · Nov 14, 6:07 PM CT",
-        "score": "4 – 4",
-        "live": false,
-        "local_date": "2026-11-14"
-      },
       "next": {
         "match": "at Lake Superior State Lakers",
         "detail": "NEXT · Nov 20, 6:07 PM CT",
