@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T16:57:07.605259+00:00",
+  "updated_at": "2026-11-17T00:44:09.140199+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "15-3-4",
@@ -278,10 +278,10 @@
     "basketball/nba/Boston Celtics": {
       "record": "11-2",
       "match": "vs Orlando Magic",
-      "detail": "NEXT · Nov 16, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Inning 2 · 9:00",
+      "score": "25 – 28",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs Dallas Mavericks",
         "detail": "FINAL · Nov 15, 5:00 PM CT",
@@ -290,10 +290,16 @@
         "local_date": "2026-11-15"
       },
       "next": {
-        "match": "vs Orlando Magic",
-        "detail": "NEXT · Nov 16, 6:00 PM CT",
+        "match": "at Denver Nuggets",
+        "detail": "NEXT · Nov 18, 8:30 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Orlando Magic",
+        "detail": "LIVE · Inning 2 · 9:00",
+        "score": "25 – 28",
+        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
