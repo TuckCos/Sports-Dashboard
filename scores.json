@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-18T07:57:56.545942+00:00",
+  "updated_at": "2026-11-18T17:10:14.373186+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "16-3-4",
-      "match": "vs NSH",
-      "detail": "FINAL · Nov 17, 7:00 PM CT",
-      "score": "7 – 3",
+      "match": "at CGY",
+      "detail": "NEXT · Nov 19, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false,
       "last": {
@@ -24,9 +24,9 @@
     },
     "hockey/nhl/Washington Capitals": {
       "record": "10-9-0",
-      "match": "at TBL",
-      "detail": "FINAL · Nov 17, 6:30 PM CT",
-      "score": "2 – 5",
+      "match": "vs BUF",
+      "detail": "NEXT · Nov 19, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
       "live": false,
       "last": {
@@ -66,9 +66,9 @@
     },
     "basketball/nba/Minnesota Timberwolves": {
       "record": "11-4",
-      "match": "vs Portland Trail Blazers",
-      "detail": "FINAL · Nov 17, 7:00 PM CT",
-      "score": "106 – 105",
+      "match": "vs New York Knicks",
+      "detail": "NEXT · Nov 19, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
@@ -87,9 +87,9 @@
     },
     "hockey/nhl/Winnipeg Jets": {
       "record": "10-9-3",
-      "match": "vs OTT",
-      "detail": "FINAL · Nov 17, 6:00 PM CT",
-      "score": "1 – 2",
+      "match": "vs NYI",
+      "detail": "NEXT · Nov 19, 6:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "live": false,
       "last": {
@@ -108,9 +108,9 @@
     },
     "hockey/nhl/Chicago Blackhawks": {
       "record": "6-13-2",
-      "match": "vs TOR",
-      "detail": "FINAL · Nov 17, 6:30 PM CT",
-      "score": "6 – 3",
+      "match": "vs CBJ",
+      "detail": "NEXT · Nov 19, 7:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
       "live": false,
       "last": {
@@ -130,8 +130,8 @@
     "hockey/nhl/Dallas Stars": {
       "record": "13-6-2",
       "match": "at VGK",
-      "detail": "FINAL · Nov 17, 9:00 PM CT",
-      "score": "4 – 3",
+      "detail": "NEXT · Nov 19, 9:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false,
       "last": {
