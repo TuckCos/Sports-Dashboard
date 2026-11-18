@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T17:52:53.674275+00:00",
+  "updated_at": "2026-11-18T00:38:58.676343+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "15-3-4",
@@ -25,10 +25,10 @@
     "hockey/nhl/Washington Capitals": {
       "record": "10-8-0",
       "match": "at TBL",
-      "detail": "NEXT · Nov 17, 6:30 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 20:00",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs NJD",
         "detail": "FINAL · Nov 14, 6:00 PM CT",
@@ -37,10 +37,16 @@
         "local_date": "2026-11-14"
       },
       "next": {
-        "match": "at TBL",
-        "detail": "NEXT · Nov 17, 6:30 PM CT",
+        "match": "vs BUF",
+        "detail": "NEXT · Nov 19, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at TBL",
+        "detail": "LIVE · Period 1 · 20:00",
+        "score": "0 – 0",
+        "live": true
       }
     },
     "football/nfl/Minnesota Vikings": {
@@ -95,10 +101,10 @@
     "hockey/nhl/Winnipeg Jets": {
       "record": "10-8-3",
       "match": "vs OTT",
-      "detail": "NEXT · Nov 17, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 02:07",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "at CHI",
         "detail": "FINAL · Nov 14, 2:30 PM CT",
@@ -107,19 +113,25 @@
         "local_date": "2026-11-14"
       },
       "next": {
-        "match": "vs OTT",
-        "detail": "NEXT · Nov 17, 6:00 PM CT",
+        "match": "vs NYI",
+        "detail": "NEXT · Nov 19, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs OTT",
+        "detail": "LIVE · Period 1 · 02:07",
+        "score": "0 – 0",
+        "live": true
       }
     },
     "hockey/nhl/Chicago Blackhawks": {
       "record": "5-13-2",
       "match": "vs TOR",
-      "detail": "NEXT · Nov 17, 6:30 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 20:00",
+      "score": "0 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs WPG",
         "detail": "FINAL · Nov 14, 2:30 PM CT",
@@ -128,10 +140,16 @@
         "local_date": "2026-11-14"
       },
       "next": {
-        "match": "vs TOR",
-        "detail": "NEXT · Nov 17, 6:30 PM CT",
+        "match": "vs CBJ",
+        "detail": "NEXT · Nov 19, 7:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs TOR",
+        "detail": "LIVE · Period 1 · 20:00",
+        "score": "0 – 0",
+        "live": true
       }
     },
     "hockey/nhl/Dallas Stars": {
