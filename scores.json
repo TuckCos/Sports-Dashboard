@@ -1,52 +1,46 @@
 {
-  "updated_at": "2026-11-18T00:38:58.676343+00:00",
+  "updated_at": "2026-11-18T07:57:56.545942+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
-      "record": "15-3-4",
+      "record": "16-3-4",
       "match": "vs NSH",
-      "detail": "NEXT · Nov 17, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 17, 7:00 PM CT",
+      "score": "7 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "live": false,
       "last": {
-        "match": "at BOS",
-        "detail": "FINAL · Nov 14, 6:00 PM CT",
-        "score": "6 – 2",
+        "match": "vs NSH",
+        "detail": "FINAL · Nov 17, 7:00 PM CT",
+        "score": "7 – 3",
         "live": false,
-        "local_date": "2026-11-14"
+        "local_date": "2026-11-17"
       },
       "next": {
-        "match": "vs NSH",
-        "detail": "NEXT · Nov 17, 7:00 PM CT",
+        "match": "at CGY",
+        "detail": "NEXT · Nov 19, 7:00 PM CT",
         "score": "",
         "live": false
       }
     },
     "hockey/nhl/Washington Capitals": {
-      "record": "10-8-0",
+      "record": "10-9-0",
       "match": "at TBL",
-      "detail": "LIVE · Period 1 · 20:00",
-      "score": "0 – 0",
+      "detail": "FINAL · Nov 17, 6:30 PM CT",
+      "score": "2 – 5",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs NJD",
-        "detail": "FINAL · Nov 14, 6:00 PM CT",
-        "score": "4 – 7",
+        "match": "at TBL",
+        "detail": "FINAL · Nov 17, 6:30 PM CT",
+        "score": "2 – 5",
         "live": false,
-        "local_date": "2026-11-14"
+        "local_date": "2026-11-17"
       },
       "next": {
         "match": "vs BUF",
         "detail": "NEXT · Nov 19, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at TBL",
-        "detail": "LIVE · Period 1 · 20:00",
-        "score": "0 – 0",
-        "live": true
       }
     },
     "football/nfl/Minnesota Vikings": {
@@ -56,13 +50,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
       "live": false,
-      "last": {
-        "match": "at Green Bay Packers",
-        "detail": "FINAL · Nov 15, 12:00 PM CT",
-        "score": "30 – 10",
-        "live": false,
-        "local_date": "2026-11-15"
-      },
       "next": {
         "match": "at San Francisco 49ers",
         "detail": "NEXT · Nov 22, 7:20 PM CT",
@@ -78,97 +65,85 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
     },
     "basketball/nba/Minnesota Timberwolves": {
-      "record": "10-4",
+      "record": "11-4",
       "match": "vs Portland Trail Blazers",
-      "detail": "NEXT · Nov 17, 7:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 17, 7:00 PM CT",
+      "score": "106 – 105",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "live": false,
       "last": {
         "match": "vs Portland Trail Blazers",
-        "detail": "FINAL · Nov 16, 7:00 PM CT",
-        "score": "106 – 98",
+        "detail": "FINAL · Nov 17, 7:00 PM CT",
+        "score": "106 – 105",
         "live": false,
-        "local_date": "2026-11-16"
+        "local_date": "2026-11-17"
       },
       "next": {
-        "match": "vs Portland Trail Blazers",
-        "detail": "NEXT · Nov 17, 7:00 PM CT",
+        "match": "vs New York Knicks",
+        "detail": "NEXT · Nov 19, 7:00 PM CT",
         "score": "",
         "live": false
       }
     },
     "hockey/nhl/Winnipeg Jets": {
-      "record": "10-8-3",
+      "record": "10-9-3",
       "match": "vs OTT",
-      "detail": "LIVE · Period 1 · 02:07",
-      "score": "0 – 0",
+      "detail": "FINAL · Nov 17, 6:00 PM CT",
+      "score": "1 – 2",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "at CHI",
-        "detail": "FINAL · Nov 14, 2:30 PM CT",
-        "score": "5 – 4",
+        "match": "vs OTT",
+        "detail": "FINAL · Nov 17, 6:00 PM CT",
+        "score": "1 – 2",
         "live": false,
-        "local_date": "2026-11-14"
+        "local_date": "2026-11-17"
       },
       "next": {
         "match": "vs NYI",
         "detail": "NEXT · Nov 19, 6:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs OTT",
-        "detail": "LIVE · Period 1 · 02:07",
-        "score": "0 – 0",
-        "live": true
       }
     },
     "hockey/nhl/Chicago Blackhawks": {
-      "record": "5-13-2",
+      "record": "6-13-2",
       "match": "vs TOR",
-      "detail": "LIVE · Period 1 · 20:00",
-      "score": "0 – 0",
+      "detail": "FINAL · Nov 17, 6:30 PM CT",
+      "score": "6 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
-      "live": true,
+      "live": false,
       "last": {
-        "match": "vs WPG",
-        "detail": "FINAL · Nov 14, 2:30 PM CT",
-        "score": "4 – 5",
+        "match": "vs TOR",
+        "detail": "FINAL · Nov 17, 6:30 PM CT",
+        "score": "6 – 3",
         "live": false,
-        "local_date": "2026-11-14"
+        "local_date": "2026-11-17"
       },
       "next": {
         "match": "vs CBJ",
         "detail": "NEXT · Nov 19, 7:00 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "vs TOR",
-        "detail": "LIVE · Period 1 · 20:00",
-        "score": "0 – 0",
-        "live": true
       }
     },
     "hockey/nhl/Dallas Stars": {
-      "record": "12-6-2",
+      "record": "13-6-2",
       "match": "at VGK",
-      "detail": "NEXT · Nov 17, 9:00 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 17, 9:00 PM CT",
+      "score": "4 – 3",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "live": false,
       "last": {
-        "match": "vs FLA",
-        "detail": "FINAL · Nov 15, 7:00 PM CT",
-        "score": "2 – 1",
+        "match": "at VGK",
+        "detail": "FINAL · Nov 17, 9:00 PM CT",
+        "score": "4 – 3",
         "live": false,
-        "local_date": "2026-11-15"
+        "local_date": "2026-11-17"
       },
       "next": {
         "match": "at VGK",
-        "detail": "NEXT · Nov 17, 9:00 PM CT",
+        "detail": "NEXT · Nov 19, 9:00 PM CT",
         "score": "",
         "live": false
       }
@@ -201,13 +176,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
       "live": false,
-      "last": {
-        "match": "vs Minnesota Vikings",
-        "detail": "FINAL · Nov 15, 12:00 PM CT",
-        "score": "10 – 30",
-        "live": false,
-        "local_date": "2026-11-15"
-      },
       "next": {
         "match": "at Los Angeles Rams",
         "detail": "NEXT · Nov 25, 7:00 PM CT",
@@ -222,13 +190,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
       "live": false,
-      "last": {
-        "match": "vs New England Patriots",
-        "detail": "FINAL · Nov 15, 8:30 AM CT",
-        "score": "35 – 10",
-        "live": false,
-        "local_date": "2026-11-15"
-      },
       "next": {
         "match": "vs Tampa Bay Buccaneers",
         "detail": "NEXT · Nov 22, 12:00 PM CT",
@@ -257,13 +218,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "live": false,
-      "last": {
-        "match": "at Atlanta Falcons",
-        "detail": "FINAL · Nov 15, 12:00 PM CT",
-        "score": "35 – 13",
-        "live": false,
-        "local_date": "2026-11-15"
-      },
       "next": {
         "match": "vs Arizona Cardinals",
         "detail": "NEXT · Nov 22, 12:00 PM CT",
@@ -278,13 +232,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
       "live": false,
-      "last": {
-        "match": "at New York Jets",
-        "detail": "FINAL · Nov 15, 12:00 PM CT",
-        "score": "31 – 12",
-        "live": false,
-        "local_date": "2026-11-15"
-      },
       "next": {
         "match": "vs Miami Dolphins",
         "detail": "NEXT · Nov 22, 12:00 PM CT",
