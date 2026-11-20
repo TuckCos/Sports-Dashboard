@@ -1,46 +1,46 @@
 {
-  "updated_at": "2026-11-19T21:35:14.331591+00:00",
+  "updated_at": "2026-11-20T02:32:52.912161+00:00",
   "cash_bid_date": "2026-11-19",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
     "wheat": {
-      "price": 5.96,
+      "price": 6.04,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-19",
       "futures": {
-        "price": 6.415,
+        "price": 6.44,
         "contract": "Dec 26 MIAX Spring Wheat",
         "unit": "bu"
       }
     },
     "soybeans": {
-      "price": 11.22,
+      "price": 11.29,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-19",
       "futures": {
-        "price": 12.075,
+        "price": 12.09,
         "contract": "Jan 27 Soybeans",
         "unit": "bu"
       }
     },
     "corn": {
-      "price": 3.54,
+      "price": 3.53,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-19",
       "futures": {
-        "price": 4.39,
+        "price": 4.3775,
         "contract": "Dec 26 Corn",
         "unit": "bu"
       }
     },
     "canola": {
-      "price": 22.8,
+      "price": 23.0,
       "unit": "cwt",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
@@ -52,35 +52,35 @@
       "price": 750.0,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-19",
+      "price_date": "2026-11-20",
       "region": "National Average"
     },
     "map": {
       "price": 984.0,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-19",
+      "price_date": "2026-11-20",
       "region": "National Average"
     },
     "potash": {
       "price": 521.5,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-19",
+      "price_date": "2026-11-20",
       "region": "National Average"
     },
     "ams": {
       "price": 593.69,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-19",
+      "price_date": "2026-11-20",
       "region": "National Average"
     },
     "anhydrous": {
       "price": 941.75,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-19",
+      "price_date": "2026-11-20",
       "region": "National Average"
     }
   }
