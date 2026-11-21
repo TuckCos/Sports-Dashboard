@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T18:59:06.252946+00:00",
+  "updated_at": "2026-11-21T00:45:19.774856+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "17-3-4",
@@ -298,15 +298,21 @@
     "hockey/mens-college-hockey/Augustana Vikings Men’s Hockey": {
       "record": "9-0-3",
       "match": "at Bowling Green Falcons",
-      "detail": "NEXT · Nov 20, 6:07 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 0:00",
+      "score": "1 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2043.png",
-      "live": false,
+      "live": true,
       "next": {
         "match": "at Bowling Green Falcons",
-        "detail": "NEXT · Nov 20, 6:07 PM CT",
+        "detail": "NEXT · Nov 21, 5:07 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Bowling Green Falcons",
+        "detail": "LIVE · Period 1 · 0:00",
+        "score": "1 – 1",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/Minnesota Golden Gophers": {
@@ -382,24 +388,30 @@
     "hockey/mens-college-hockey/Michigan Wolverines": {
       "record": null,
       "match": "vs Michigan State Spartans",
-      "detail": "NEXT · Nov 20, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 0:00",
+      "score": "2 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-      "live": false,
+      "live": true,
       "next": {
-        "match": "vs Michigan State Spartans",
-        "detail": "NEXT · Nov 20, 6:00 PM CT",
+        "match": "vs Michigan Wolverines",
+        "detail": "NEXT · Nov 21, 5:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "vs Michigan State Spartans",
+        "detail": "LIVE · Period 1 · 0:00",
+        "score": "2 – 1",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/Boston University Terriers": {
       "record": null,
       "match": "at Merrimack Warriors",
-      "detail": "NEXT · Nov 20, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 0:00",
+      "score": "0 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs Quinnipiac Bobcats",
         "detail": "FINAL · Nov 18, 6:00 PM CT",
@@ -408,38 +420,56 @@
         "local_date": "2026-11-18"
       },
       "next": {
-        "match": "at Merrimack Warriors",
-        "detail": "NEXT · Nov 20, 6:00 PM CT",
+        "match": "vs Merrimack Warriors",
+        "detail": "NEXT · Nov 21, 5:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Merrimack Warriors",
+        "detail": "LIVE · Period 1 · 0:00",
+        "score": "0 – 1",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/Boston College Eagles": {
       "record": null,
       "match": "at Maine Black Bears",
-      "detail": "NEXT · Nov 20, 6:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 0:00",
+      "score": "1 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
-      "live": false,
+      "live": true,
       "next": {
         "match": "at Maine Black Bears",
-        "detail": "NEXT · Nov 20, 6:00 PM CT",
+        "detail": "NEXT · Nov 21, 6:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Maine Black Bears",
+        "detail": "LIVE · Period 1 · 0:00",
+        "score": "1 – 0",
+        "live": true
       }
     },
     "hockey/mens-college-hockey/Bemidji State Beavers": {
       "record": null,
       "match": "at Lake Superior State Lakers",
-      "detail": "NEXT · Nov 20, 6:07 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 0:00",
+      "score": "1 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/132.png",
-      "live": false,
+      "live": true,
       "next": {
         "match": "at Lake Superior State Lakers",
-        "detail": "NEXT · Nov 20, 6:07 PM CT",
+        "detail": "NEXT · Nov 21, 5:07 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Lake Superior State Lakers",
+        "detail": "LIVE · Period 1 · 0:00",
+        "score": "1 – 1",
+        "live": true
       }
     }
   }
