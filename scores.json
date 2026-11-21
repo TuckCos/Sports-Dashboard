@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T15:40:22.253619+00:00",
+  "updated_at": "2026-11-21T21:13:04.592759+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "17-3-4",
@@ -109,10 +109,10 @@
     "hockey/nhl/Chicago Blackhawks": {
       "record": "6-14-2",
       "match": "at CGY",
-      "detail": "NEXT · Nov 21, 2:30 PM CT",
-      "score": "",
+      "detail": "LIVE · Period 1 · 00:58",
+      "score": "0 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "vs CBJ",
         "detail": "FINAL · Nov 19, 7:00 PM CT",
@@ -121,10 +121,16 @@
         "local_date": "2026-11-19"
       },
       "next": {
-        "match": "at CGY",
-        "detail": "NEXT · Nov 21, 2:30 PM CT",
+        "match": "at VAN",
+        "detail": "NEXT · Nov 22, 7:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at CGY",
+        "detail": "LIVE · Period 1 · 00:58",
+        "score": "0 – 1",
+        "live": true
       }
     },
     "hockey/nhl/Dallas Stars": {
@@ -261,23 +267,24 @@
       }
     },
     "soccer/eng.2/Wrexham AFC": {
-      "record": "4-6-5",
+      "record": "5-6-5",
       "match": "at Lincoln City",
-      "detail": "LIVE · Half 1 · 40'",
-      "score": "0 – 0",
+      "detail": "FINAL · Nov 21, 9:00 AM CT",
+      "score": "1 – 0",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "at Lincoln City",
+        "detail": "FINAL · Nov 21, 9:00 AM CT",
+        "score": "1 – 0",
+        "live": false,
+        "local_date": "2026-11-21"
+      },
       "next": {
         "match": "at Bristol City",
         "detail": "NEXT · Nov 24, 1:45 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Lincoln City",
-        "detail": "LIVE · Half 1 · 40'",
-        "score": "0 – 0",
-        "live": true
       }
     },
     "hockey/mens-college-hockey/North Dakota Fighting Hawks": {
