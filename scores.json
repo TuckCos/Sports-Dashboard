@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T18:26:02.752258+00:00",
+  "updated_at": "2026-11-25T02:44:19.502871+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "18-3-5",
@@ -284,10 +284,10 @@
     "basketball/nba/Boston Celtics": {
       "record": "11-6",
       "match": "at Washington Wizards",
-      "detail": "NEXT · Nov 24, 7:00 PM CT",
-      "score": "",
+      "detail": "LIVE · Inning 3 · 4:30",
+      "score": "94 – 75",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "live": false,
+      "live": true,
       "last": {
         "match": "at Golden State Warriors",
         "detail": "FINAL · Nov 22, 7:30 PM CT",
@@ -296,22 +296,35 @@
         "local_date": "2026-11-22"
       },
       "next": {
-        "match": "at Washington Wizards",
-        "detail": "NEXT · Nov 24, 7:00 PM CT",
+        "match": "vs Atlanta Hawks",
+        "detail": "NEXT · Nov 27, 7:00 PM CT",
         "score": "",
         "live": false
+      },
+      "current": {
+        "match": "at Washington Wizards",
+        "detail": "LIVE · Inning 3 · 4:30",
+        "score": "94 – 75",
+        "live": true
       }
     },
     "soccer/eng.2/Wrexham AFC": {
-      "record": "5-6-5",
+      "record": "5-7-5",
       "match": "at Bristol City",
-      "detail": "NEXT · Nov 24, 1:45 PM CT",
-      "score": "",
+      "detail": "FINAL · Nov 24, 1:45 PM CT",
+      "score": "1 – 1",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
       "live": false,
-      "next": {
+      "last": {
         "match": "at Bristol City",
-        "detail": "NEXT · Nov 24, 1:45 PM CT",
+        "detail": "FINAL · Nov 24, 1:45 PM CT",
+        "score": "1 – 1",
+        "live": false,
+        "local_date": "2026-11-24"
+      },
+      "next": {
+        "match": "vs Portsmouth",
+        "detail": "NEXT · Nov 28, 9:00 AM CT",
         "score": "",
         "live": false
       }
