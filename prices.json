@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T16:12:40.260251+00:00",
+  "updated_at": "2026-11-25T00:42:11.632581+00:00",
   "cash_bid_date": "2026-11-24",
   "cash_bid_source": "https://www.tronsongrain.com/cash-bids",
   "crops": {
@@ -10,7 +10,7 @@
       "delivery": "Nov",
       "bid_date": "2026-11-24",
       "futures": {
-        "price": 6.43,
+        "price": 6.4275,
         "contract": "Mar 27 MIAX Spring Wheat",
         "unit": "bu"
       }
@@ -28,13 +28,13 @@
       }
     },
     "corn": {
-      "price": 3.68,
+      "price": 3.7,
       "unit": "bu",
       "source": "Tronson Grain - Doyon",
       "delivery": "Nov",
       "bid_date": "2026-11-24",
       "futures": {
-        "price": 4.4775,
+        "price": 4.5025,
         "contract": "Mar 27 Corn",
         "unit": "bu"
       }
@@ -52,35 +52,35 @@
       "price": 730.0,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-24",
+      "price_date": "2026-11-25",
       "region": "National Average"
     },
     "map": {
       "price": 1072.82,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-24",
+      "price_date": "2026-11-25",
       "region": "National Average"
     },
     "potash": {
       "price": 535.2,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-24",
+      "price_date": "2026-11-25",
       "region": "National Average"
     },
     "ams": {
       "price": 475.0,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-24",
+      "price_date": "2026-11-25",
       "region": "National Average"
     },
     "anhydrous": {
       "price": 901.13,
       "unit": "short ton",
       "source": "FertilizerPrice.com - National Average",
-      "price_date": "2026-11-24",
+      "price_date": "2026-11-25",
       "region": "National Average"
     }
   }
