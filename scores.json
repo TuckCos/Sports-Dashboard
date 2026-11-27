@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T04:15:28.293816+00:00",
+  "updated_at": "2026-11-27T14:01:12.693012+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "18-4-5",
@@ -190,14 +190,14 @@
       "detail": "FINAL · Nov 26, 12:00 PM CT",
       "score": "35 – 39",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
-      "live": false,
       "last": {
         "match": "vs Chicago Bears",
         "detail": "FINAL · Nov 26, 12:00 PM CT",
         "score": "35 – 39",
         "live": false,
         "local_date": "2026-11-26"
-      }
+      },
+      "live": false
     },
     "football/nfl/Chicago Bears": {
       "record": "9-2",
@@ -205,33 +205,34 @@
       "detail": "FINAL · Nov 26, 12:00 PM CT",
       "score": "39 – 35",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "live": false,
       "last": {
         "match": "at Detroit Lions",
         "detail": "FINAL · Nov 26, 12:00 PM CT",
         "score": "39 – 35",
         "live": false,
         "local_date": "2026-11-26"
-      }
+      },
+      "live": false
     },
     "football/nfl/Kansas City Chiefs": {
-      "record": "8-2",
-      "match": "at Buffalo Bills",
-      "detail": "LIVE · Quarter 4 · 1:40",
-      "score": "10 – 10",
+      "record": "8-3",
+      "match": "at Los Angeles Rams",
+      "detail": "NEXT · Dec 3, 7:15 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "live": true,
+      "live": false,
+      "last": {
+        "match": "at Buffalo Bills",
+        "detail": "FINAL · Nov 26, 7:20 PM CT",
+        "score": "10 – 13",
+        "live": false,
+        "local_date": "2026-11-26"
+      },
       "next": {
         "match": "at Los Angeles Rams",
         "detail": "NEXT · Dec 3, 7:15 PM CT",
         "score": "",
         "live": false
-      },
-      "current": {
-        "match": "at Buffalo Bills",
-        "detail": "LIVE · Quarter 4 · 1:40",
-        "score": "10 – 10",
-        "live": true
       }
     },
     "football/nfl/Buffalo Bills": {
@@ -240,6 +241,13 @@
       "detail": "LIVE · Quarter 4 · 1:40",
       "score": "10 – 10",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+      "last": {
+        "match": "vs Kansas City Chiefs",
+        "detail": "FINAL · Nov 26, 7:20 PM CT",
+        "score": "13 – 10",
+        "live": false,
+        "local_date": "2026-11-26"
+      },
       "live": true,
       "current": {
         "match": "vs Kansas City Chiefs",
@@ -262,13 +270,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "live": false,
-      "last": {
-        "match": "at Washington Wizards",
-        "detail": "FINAL · Nov 24, 7:00 PM CT",
-        "score": "131 – 116",
-        "live": false,
-        "local_date": "2026-11-24"
-      },
       "next": {
         "match": "vs Atlanta Hawks",
         "detail": "NEXT · Nov 27, 7:00 PM CT",
@@ -283,13 +284,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png",
       "live": false,
-      "last": {
-        "match": "at Bristol City",
-        "detail": "FINAL · Nov 24, 1:45 PM CT",
-        "score": "1 – 1",
-        "live": false,
-        "local_date": "2026-11-24"
-      },
       "next": {
         "match": "vs Portsmouth",
         "detail": "NEXT · Nov 28, 9:00 AM CT",
