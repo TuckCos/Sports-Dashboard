@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T04:17:25.030496+00:00",
+  "updated_at": "2026-11-28T13:20:26.778962+00:00",
   "teams": {
     "hockey/nhl/Minnesota Wild": {
       "record": "18-4-6",
@@ -171,25 +171,25 @@
     },
     "football/nfl/Green Bay Packers": {
       "record": "6-5",
-      "match": "at Los Angeles Rams",
-      "detail": "FINAL · Nov 25, 7:00 PM CT",
-      "score": "13 – 26",
+      "match": "at New Orleans Saints",
+      "detail": "NEXT · Dec 6, 12:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
-      "last": {
-        "match": "at Los Angeles Rams",
-        "detail": "FINAL · Nov 25, 7:00 PM CT",
-        "score": "13 – 26",
-        "live": false,
-        "local_date": "2026-11-25"
-      },
-      "live": false
+      "live": false,
+      "next": {
+        "match": "at New Orleans Saints",
+        "detail": "NEXT · Dec 6, 12:00 PM CT",
+        "score": "",
+        "live": false
+      }
     },
     "football/nfl/Detroit Lions": {
       "record": "8-3",
-      "match": "vs Chicago Bears",
-      "detail": "FINAL · Nov 26, 12:00 PM CT",
-      "score": "35 – 39",
+      "match": "at Atlanta Falcons",
+      "detail": "NEXT · Dec 6, 12:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+      "live": false,
       "last": {
         "match": "vs Chicago Bears",
         "detail": "FINAL · Nov 26, 12:00 PM CT",
@@ -197,14 +197,20 @@
         "live": false,
         "local_date": "2026-11-26"
       },
-      "live": false
+      "next": {
+        "match": "at Atlanta Falcons",
+        "detail": "NEXT · Dec 6, 12:00 PM CT",
+        "score": "",
+        "live": false
+      }
     },
     "football/nfl/Chicago Bears": {
       "record": "9-2",
-      "match": "at Detroit Lions",
-      "detail": "FINAL · Nov 26, 12:00 PM CT",
-      "score": "39 – 35",
+      "match": "vs Jacksonville Jaguars",
+      "detail": "NEXT · Dec 6, 12:00 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+      "live": false,
       "last": {
         "match": "at Detroit Lions",
         "detail": "FINAL · Nov 26, 12:00 PM CT",
@@ -212,7 +218,12 @@
         "live": false,
         "local_date": "2026-11-26"
       },
-      "live": false
+      "next": {
+        "match": "vs Jacksonville Jaguars",
+        "detail": "NEXT · Dec 6, 12:00 PM CT",
+        "score": "",
+        "live": false
+      }
     },
     "football/nfl/Kansas City Chiefs": {
       "record": "8-3",
@@ -236,11 +247,12 @@
       }
     },
     "football/nfl/Buffalo Bills": {
-      "record": "9-1",
-      "match": "vs Kansas City Chiefs",
-      "detail": "LIVE · Quarter 4 · 1:40",
-      "score": "10 – 10",
+      "record": "10-1",
+      "match": "at New England Patriots",
+      "detail": "NEXT · Dec 6, 3:25 PM CT",
+      "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+      "live": false,
       "last": {
         "match": "vs Kansas City Chiefs",
         "detail": "FINAL · Nov 26, 7:20 PM CT",
@@ -248,12 +260,11 @@
         "live": false,
         "local_date": "2026-11-26"
       },
-      "live": true,
-      "current": {
-        "match": "vs Kansas City Chiefs",
-        "detail": "LIVE · Quarter 4 · 1:40",
-        "score": "10 – 10",
-        "live": true
+      "next": {
+        "match": "at New England Patriots",
+        "detail": "NEXT · Dec 6, 3:25 PM CT",
+        "score": "",
+        "live": false
       }
     },
     "baseball/mlb/New York Yankees": {
@@ -501,13 +512,6 @@
       "score": "",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/132.png",
       "live": false,
-      "last": {
-        "match": "vs St. Thomas Tommies",
-        "detail": "FINAL · Nov 25, 6:07 PM CT",
-        "score": "2 – 4",
-        "live": false,
-        "local_date": "2026-11-25"
-      },
       "next": {
         "match": "at St. Thomas Tommies",
         "detail": "NEXT · Nov 28, 6:00 PM CT",
